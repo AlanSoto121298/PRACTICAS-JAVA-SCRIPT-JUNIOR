@@ -84,5 +84,17 @@ console.log(resultado);
 // devuelva un nuevo array con los números mayores que 10.
 
 function numMayor(array){
+  const arrayNew = [];
 
+  for(let i = 0; i < array.length; i++){
+    if(array[i] > 10){
+        arrayNew.push(array[i])
+    }
+  }
+
+  return arrayNew;
 }
+
+const resultado = numMayor([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]);
+
+console.log(resultado);

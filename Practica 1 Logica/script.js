@@ -35,3 +35,16 @@ function mayorMenor(a, b) {
 const resultado2 = mayorMenor(50,30);
 console.log(resultado2)
 
+//FUNCION CON BUCLE FOR
+
+function imprimirHasta(n){
+    for(let i = 1; i <= n; i++){
+        
+        console.log(i)
+    }
+}
+
+
+imprimirHasta(20)
+
+

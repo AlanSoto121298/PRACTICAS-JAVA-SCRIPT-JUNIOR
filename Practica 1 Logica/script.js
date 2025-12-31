@@ -63,3 +63,19 @@ const resultado = sumarHasta(2);
 console.log(resultado)
  */
 
+//Escribimos una función con un parametro de un array, vamos agregar los numeros pares a ese array
+
+function numPar(array){
+    const array2 = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % 2 === 0){
+            array2.push(array[i])
+        }
+    }
+
+    return array2;
+}
+
+const resultado = numPar([1,2,3,4,5,6,7,8,,9,10,11,12,13,14,15,16,17,18,19,20]);
+console.log(resultado);

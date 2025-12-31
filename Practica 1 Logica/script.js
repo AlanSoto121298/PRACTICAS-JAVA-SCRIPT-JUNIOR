@@ -83,7 +83,7 @@ console.log(resultado);
 //Escribe una función que reciba un array de números y 
 // devuelva un nuevo array con los números mayores que 10.
 
-function numMayor(array){
+/* function numMayor(array){
   const arrayNew = [];
 
   for(let i = 0; i < array.length; i++){
@@ -98,3 +98,4 @@ function numMayor(array){
 const resultado = numMayor([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]);
 
 console.log(resultado);
+ */

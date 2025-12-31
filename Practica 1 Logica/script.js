@@ -48,7 +48,7 @@ imprimirHasta(20)
 
 //FUNCION DE SUMAR 
 
-function sumarHasta(n){
+/* function sumarHasta(n){
   let suma = 0;
 
   for(let i = 1; i <= n; i++){
@@ -61,5 +61,5 @@ function sumarHasta(n){
 const resultado = sumarHasta(2);
 
 console.log(resultado)
-
+ */
 

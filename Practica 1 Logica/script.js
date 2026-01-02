@@ -179,7 +179,7 @@ Escribe una función que reciba un array de números y devuelva el número más 
 
 numMayorMenor() */
 
-function numMayorMenor(array) {
+/* function numMayorMenor(array) {
     let max = array[0];
     let min = array[0];
 
@@ -193,4 +193,24 @@ function numMayorMenor(array) {
 
 const resultado = numMayorMenor([3, 7, 1, 9, 4]);
 console.log(resultado); // { max: 9, min: 1 }
+ */
 
+function statsArray(array){
+    let max = array[0];
+    let min = array [0];
+    let suma = 0;
+
+    for(let i = 0; i < array.length; i++){
+        const num = array[i]
+        if(num > max) max =num;
+        if(num < min) min =num;
+
+        suma+=num;
+    }
+
+    const promedio = suma / array.length;
+    return {max,min,promedio};
+}
+
+const resultado = statsArray([2,4,6,8,10]);
+console.log(resultado)

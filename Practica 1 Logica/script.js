@@ -104,7 +104,7 @@ console.log(resultado);
 /*Escribe una función que reciba un array de números y
 devuelva un nuevo array solo con los números pares y suma esos pares . */
 
-function numPares(array){
+/* function numPares(array){
     let suma = 0;
     const array2 = [];
 
@@ -119,4 +119,21 @@ function numPares(array){
 }
 
 const resultado = numPares([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]);
-console.log(resultado);
+console.log(resultado); */
+
+
+/*
+Escribe una función que reciba un array de números y
+devuelva un nuevo array con los números multiplicados por 2. */
+
+function Multi(array){
+    let multiplicacion = 0;
+    const array2 = [];
+
+    for(let i = 0; i < array.length; i++){
+        
+    }
+}
+
+Multi()
+

@@ -1,4 +1,4 @@
-//Suma en una función con 2 parametros 
+//Suma en una función con 2 parametros
 /* function suma(a, b) {
 
     const resultado = a + b;
@@ -46,7 +46,7 @@ imprimirHasta(20)
  */
 
 
-//FUNCION DE SUMAR 
+//FUNCION DE SUMAR
 
 /* function sumarHasta(n){
   let suma = 0;
@@ -80,7 +80,7 @@ console.log(resultado)
 const resultado = numPar([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]);
 console.log(resultado);
  */
-//Escribe una función que reciba un array de números y 
+//Escribe una función que reciba un array de números y
 // devuelva un nuevo array con los números mayores que 10.
 
 /* function numMayor(array){
@@ -126,7 +126,7 @@ console.log(resultado); */
 Escribe una función que reciba un array de números y
 devuelva un nuevo array con los números multiplicados por 2. */
 
-function Multi(array){
+/* function Multi(array){
     const array2 = [];
 
    for(let i = 0; i < array.length; i++){
@@ -138,4 +138,44 @@ function Multi(array){
 
 const resultado = Multi([1,2,3,4,5,6,7,8,9,10])
 console.log(resultado)
+ */
+
+/*
+Escribe una función que reciba un array de números y devuelva un nuevo 
+array solo con los números impares al cubo. */
+
+/* function numImpar(array){
+    const array2  = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % 2 === 1){
+            array2.push(array[i] ** 3)
+        }
+    }
+
+    return array2;
+}
+
+const resultado = numImpar([1,2,3,4,5]);
+console.log(resultado);
+ */
+
+
+/*
+Escribe una función que reciba un array de números y devuelva el número más grande
+ y el más pequeño en un objeto con
+ esta estructura:
+ entrada: [3, 7, 1, 9, 4] */
+
+ function numMayorMenor(){
+   const resultado = {"Alan": 27, "Mildred": 26, "juan M":27}
+
+   const maxNumero = Math.max(...Object.values(resultado));
+   const minNumero = Math.min(...Object.values(resultado));
+   console.log(`Max: ${maxNumero}`)
+   console.log(`Min: ${minNumero}`)
+
+ }
+
+numMayorMenor()
 

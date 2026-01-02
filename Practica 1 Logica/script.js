@@ -167,7 +167,7 @@ Escribe una función que reciba un array de números y devuelva el número más 
  esta estructura:
  entrada: [3, 7, 1, 9, 4] */
 
- function numMayorMenor(){
+/*  function numMayorMenor(){
    const resultado = {"Alan": 27, "Mildred": 26, "juan M":27}
 
    const maxNumero = Math.max(...Object.values(resultado));
@@ -177,5 +177,20 @@ Escribe una función que reciba un array de números y devuelva el número más 
 
  }
 
-numMayorMenor()
+numMayorMenor() */
+
+function numMayorMenor(array) {
+    let max = array[0];
+    let min = array[0];
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > max) max = array[i];
+        if (array[i] < min) min = array[i];
+    }
+
+    return { max, min };
+}
+
+const resultado = numMayorMenor([3, 7, 1, 9, 4]);
+console.log(resultado); // { max: 9, min: 1 }
 

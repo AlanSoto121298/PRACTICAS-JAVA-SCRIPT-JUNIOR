@@ -127,13 +127,15 @@ Escribe una función que reciba un array de números y
 devuelva un nuevo array con los números multiplicados por 2. */
 
 function Multi(array){
-    let multiplicacion = 0;
     const array2 = [];
 
-    for(let i = 0; i < array.length; i++){
-        
-    }
+   for(let i = 0; i < array.length; i++){
+    array2.push(array[i] * 2)
+   }
+
+   return array2;
 }
 
-Multi()
+const resultado = Multi([1,2,3,4,5,6,7,8,9,10])
+console.log(resultado)
 

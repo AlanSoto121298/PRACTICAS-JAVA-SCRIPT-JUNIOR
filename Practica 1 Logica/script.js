@@ -214,3 +214,20 @@ console.log(resultado); // { max: 9, min: 1 }
 
 const resultado = statsArray([2,4,6,8,10]);
 console.log(resultado) */
+
+/*Escribe una función llamada esParOImpar que reciba un número y devuelva:
+
+"par" si el número es par
+
+"impar" si el número es impar */
+
+function esParOImpar(num){
+  if(num % 2 === 0){
+     console.log("Es par");
+  } else{
+     console.log("Es Impar");
+  }
+}
+
+esParOImpar(2);
+esParOImpar(1);

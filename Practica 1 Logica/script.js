@@ -195,7 +195,7 @@ const resultado = numMayorMenor([3, 7, 1, 9, 4]);
 console.log(resultado); // { max: 9, min: 1 }
  */
 
-function statsArray(array){
+/* function statsArray(array){
     let max = array[0];
     let min = array [0];
     let suma = 0;
@@ -213,4 +213,4 @@ function statsArray(array){
 }
 
 const resultado = statsArray([2,4,6,8,10]);
-console.log(resultado)
+console.log(resultado) */

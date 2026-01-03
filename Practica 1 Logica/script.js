@@ -238,7 +238,7 @@ Escribe una función llamada filtrarMayores que reciba un array de números y de
 
 //filtrarMayores([2, 6, 3, 8, 1, 10])
 
-function filtrarMayores(array) {
+/* function filtrarMayores(array) {
     const array2 = [];
 
     for (let i = 0; i < array.length; i++) {
@@ -253,3 +253,16 @@ function filtrarMayores(array) {
 const resultado = filtrarMayores([2, 6, 3, 8, 1, 10]);
 
 console.log(resultado);
+ */
+
+function devolverObjeto(persona) {
+    return `${persona.nombre} tiene ${persona.edad} años y vive en ${persona.ciudad}`;
+}
+
+const persona = {
+  nombre: "Ana",
+  edad: 25,
+  ciudad: "Madrid"
+};
+
+console.log(devolverObjeto(persona));

@@ -221,13 +221,35 @@ console.log(resultado) */
 
 "impar" si el número es impar */
 
-function esParOImpar(num){
+/* function esParOImpar(num){
   if(num % 2 === 0){
-     console.log("Es par");
+     return "ES PAR"
   } else{
-     console.log("Es Impar");
+     return "ES IMPAR"
   }
 }
 
-esParOImpar(2);
-esParOImpar(1);
+console.log(esParOImpar(4));
+console.log(esParOImpar(7)); */
+
+/*
+Escribe una función llamada filtrarMayores que reciba un array de números y devuelva
+ un nuevo array solo con los números mayores a 5. */
+
+//filtrarMayores([2, 6, 3, 8, 1, 10])
+
+function filtrarMayores(array) {
+    const array2 = [];
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > 5)
+            array2.push(array[i])
+    }
+
+    return array2;
+
+}
+
+const resultado = filtrarMayores([2, 6, 3, 8, 1, 10]);
+
+console.log(resultado);

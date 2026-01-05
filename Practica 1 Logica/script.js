@@ -255,7 +255,7 @@ const resultado = filtrarMayores([2, 6, 3, 8, 1, 10]);
 console.log(resultado);
  */
 
-function devolverObjeto(persona) {
+/* function devolverObjeto(persona) {
     return `${persona.nombre} tiene ${persona.edad} años y vive en ${persona.ciudad}`;
 }
 
@@ -266,3 +266,30 @@ const persona = {
 };
 
 console.log(devolverObjeto(persona));
+
+ */
+
+//CLOUSURE JS 
+/* function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc(); */
+
+function movie(){
+    const name = "El señor de los anillos";
+    function funcionPeli(){
+        console.log(name)
+    }
+
+    return funcionPeli;
+}
+
+const myFunc = movie();
+myFunc();
+

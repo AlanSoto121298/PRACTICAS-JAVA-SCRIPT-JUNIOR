@@ -141,7 +141,7 @@ console.log(resultado)
  */
 
 /*
-Escribe una función que reciba un array de números y devuelva un nuevo 
+Escribe una función que reciba un array de números y devuelva un nuevo
 array solo con los números impares al cubo. */
 
 /* function numImpar(array){
@@ -294,7 +294,7 @@ Multiplique cada par por 2
 
 Devuelva el resultado en un nuevo array */
 
-function numPares(array) {
+/* function numPares(array) {
     const array2 = [];
 
     for (let i = 0; i < array.length; i++) {
@@ -307,6 +307,33 @@ function numPares(array) {
 
 }
 
-const resultado = numPares([1,2,3,4,5,6]);
-console.log(resultado);
+const resultado = numPares([1,2,3,4,5,6]); 
+console.log(resultado); */
 
+
+/*
+Consigna
+
+Escribe una función llamada sumarParesImpares que reciba un array de 
+números y devuelva un objeto con la suma de los números pares y la suma de los números impares. */
+
+function sumarParesImpares(array) {
+  let pares = 0;
+  let impares = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      pares += array[i];
+    } else {
+      impares += array[i];
+    }
+  }
+
+  return { pares, impares };
+}
+
+console.log(sumarParesImpares([1,2,3,4,5])); 
+// { pares: 6, impares: 9 }
+
+console.log(sumarParesImpares([10,15,20])); 
+// { pares: 30, impares: 15 }

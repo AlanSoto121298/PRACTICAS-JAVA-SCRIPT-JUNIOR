@@ -270,18 +270,8 @@ console.log(devolverObjeto(persona));
  */
 
 //CLOUSURE JS 
-/* function makeFunc() {
-  const name = "Mozilla";
-  function displayName() {
-    console.log(name);
-  }
-  return displayName;
-}
 
-const myFunc = makeFunc();
-myFunc(); */
-
-function movie(){
+/* function movie(){
     const name = "El señor de los anillos";
     function funcionPeli(){
         console.log(name)
@@ -292,4 +282,4 @@ function movie(){
 
 const myFunc = movie();
 myFunc();
-
+ */

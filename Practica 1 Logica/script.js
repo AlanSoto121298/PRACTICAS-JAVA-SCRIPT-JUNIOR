@@ -283,3 +283,30 @@ console.log(devolverObjeto(persona));
 const myFunc = movie();
 myFunc();
  */
+
+
+/*Escribe una función que:
+
+Devuelva solo los números pares
+
+Multiplique cada par por 2
+[1, 2, 3, 4, 5, 6]
+
+Devuelva el resultado en un nuevo array */
+
+function numPares(array) {
+    const array2 = [];
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            array2.push(array[i] * 2);
+        }
+    }
+
+    return array2;
+
+}
+
+const resultado = numPares([1,2,3,4,5,6]);
+console.log(resultado);
+

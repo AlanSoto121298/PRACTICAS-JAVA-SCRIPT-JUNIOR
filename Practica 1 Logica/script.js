@@ -316,7 +316,7 @@ Consigna
 
 Escribe una función llamada sumarParesImpares que reciba un array de 
 números y devuelva un objeto con la suma de los números pares y la suma de los números impares. */
-
+/* 
 function sumarParesImpares(array) {
   let pares = 0;
   let impares = 0;
@@ -335,5 +335,5 @@ function sumarParesImpares(array) {
 console.log(sumarParesImpares([1,2,3,4,5])); 
 // { pares: 6, impares: 9 }
 
-console.log(sumarParesImpares([10,15,20])); 
+console.log(sumarParesImpares([10,15,20]));  */
 // { pares: 30, impares: 15 }

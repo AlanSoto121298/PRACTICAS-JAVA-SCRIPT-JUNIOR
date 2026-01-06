@@ -339,7 +339,7 @@ console.log(sumarParesImpares([10,15,20]));  */
 // { pares: 30, impares: 15 }
 
 
-function sumPares(array){
+/* function sumPares(array){
    const array2 = [];
    let suma  = 0;
 
@@ -354,4 +354,16 @@ function sumPares(array){
 }
 
 const resultado = sumPares([1, 2, 3, 4, 5, 6]);
+console.log(resultado) */
+
+function sumPares(arr){
+    return arr
+    .filter(numero => numero % 2 === 0)
+    .reduce((acc,num) => acc+num,0);
+}
+
+const numeros = [1,2,3,4,5,6,7,8,9,10];
+const resultado = sumPares(numeros);
 console.log(resultado)
+
+        

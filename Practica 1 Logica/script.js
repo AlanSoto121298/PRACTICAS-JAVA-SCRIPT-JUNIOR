@@ -367,7 +367,7 @@ const resultado = sumPares(numeros);
 console.log(resultado)
  */
         
-const boton = document.querySelector("#btn");
+/* const boton = document.querySelector("#btn");
 const parrafo = document.querySelector("#text");
 
 boton.addEventListener("click",() =>{
@@ -378,4 +378,69 @@ boton.addEventListener("click",() =>{
     }
 
     
+}) */
+
+
+/*
+Mini-Test Final – Pasos a seguir
+
+Selecciona los elementos del DOM
+
+Botón con id btn
+
+Lista <ul> con id lista
+
+Crea un array de números
+
+const numeros = [1,2,3,4,5,6,7,8,9,10];
+
+
+Agrega un event listener al botón
+
+Que escuche el evento "click"
+
+Dentro del event listener:
+
+4.1 Filtra los números pares del array
+
+4.2 Calcula la suma de los números pares
+
+4.3 Limpia la lista <ul> antes de agregar nuevos elementos
+
+4.4 Agrega cada número par como un <li> dentro de la lista
+
+4.5 Muestra debajo de la lista un <p> con el texto: "Suma total: X" (reemplazando X por la suma)
+
+Opcional:
+
+Puedes usar .filter() y .reduce() para filtrar y sumar
+
+Recuerda que cada click debe actualizar la lista y la suma, no duplicar elementos */
+
+const boton = document.querySelector("#btn");
+const lista = document.querySelector("#lista");
+const parrafoSuma = document.querySelector("#suma")
+const numeros = [1,2,3,4,5,6,7,8,9,10];
+
+boton.addEventListener("click",() => {
+     
+    //filtramos pares
+    const pares = numeros.filter(numero => numero % 2 === 0);
+    //sumamos pares
+    const suma = pares.reduce((acc,num) => acc + num,0);
+
+    //limpiamos la lista ul
+     lista.innerHTML = "";
+
+     //agregamos los numeros par a la lista usando ForEach
+     pares.forEach(num =>{
+        const li = document.createElement("li");
+        li.textContent = num;
+        lista.appendChild(li);
+
+     });
+
+     //Mostramos la suma en el P
+     parrafoSuma.textContent = `La suma total es: ${suma}`;
 })
+

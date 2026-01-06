@@ -356,7 +356,7 @@ console.log(sumarParesImpares([10,15,20]));  */
 const resultado = sumPares([1, 2, 3, 4, 5, 6]);
 console.log(resultado) */
 
-function sumPares(arr){
+/* function sumPares(arr){
     return arr
     .filter(numero => numero % 2 === 0)
     .reduce((acc,num) => acc+num,0);
@@ -365,5 +365,17 @@ function sumPares(arr){
 const numeros = [1,2,3,4,5,6,7,8,9,10];
 const resultado = sumPares(numeros);
 console.log(resultado)
-
+ */
         
+const boton = document.querySelector("#btn");
+const parrafo = document.querySelector("#text");
+
+boton.addEventListener("click",() =>{
+    if(parrafo.style.display === "none"){
+        parrafo.style.display = "block";
+    }else{
+        parrafo.style.display = "none";
+    }
+
+    
+})

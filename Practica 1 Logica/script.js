@@ -337,3 +337,21 @@ console.log(sumarParesImpares([1,2,3,4,5]));
 
 console.log(sumarParesImpares([10,15,20]));  */
 // { pares: 30, impares: 15 }
+
+
+function sumPares(array){
+   const array2 = [];
+   let suma  = 0;
+
+   for(let i = 0; i < array.length; i++){
+    if(array[i] % 2 === 0){
+        array2.push(array[i])
+        suma+=array[i]
+    }
+   }
+
+   return suma;
+}
+
+const resultado = sumPares([1, 2, 3, 4, 5, 6]);
+console.log(resultado)

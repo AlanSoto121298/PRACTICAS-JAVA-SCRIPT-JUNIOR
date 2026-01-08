@@ -552,7 +552,7 @@ Puedes usar Set para eliminar duplicados.
 
 Trata de no mutar el array original. */
 
-function procesarNumeros(){
+/* function procesarNumeros(){
 const numeros = [3, -1, 4, 3, 0, -2, 4, 5, 0, 2];
 
 const setNumeros = new Set (numeros);
@@ -565,7 +565,21 @@ const filtrar = numerosArray.filter(numero => numero > 0);
 console.log(filtrar)
 }
 
-procesarNumeros();
+procesarNumeros(); */
 
+function buscarNombres(nombres){
+    // eliminamos duplicados usando Set
+    const nombresUnicos = [...new Set(nombres)];
 
+    // ordenamos alfabéticamente
+    nombresUnicos.sort((a, b) => a.localeCompare(b));
 
+    // devolvemos el resultado
+    return nombresUnicos;
+}
+
+const resultado = buscarNombres([
+    "Alan","Mildred","Mildred","Omar","Luis","Luis","Arale","Pepito","juan","juan","martin"
+]);
+
+console.log(resultado);

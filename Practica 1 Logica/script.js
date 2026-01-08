@@ -417,7 +417,7 @@ Puedes usar .filter() y .reduce() para filtrar y sumar
 
 Recuerda que cada click debe actualizar la lista y la suma, no duplicar elementos */
 
-const boton = document.querySelector("#btn");
+/* const boton = document.querySelector("#btn");
 const lista = document.querySelector("#lista");
 const parrafoSuma = document.querySelector("#suma")
 const numeros = [1,2,3,4,5,6,7,8,9,10];
@@ -443,4 +443,24 @@ boton.addEventListener("click",() => {
      //Mostramos la suma en el P
      parrafoSuma.textContent = `La suma total es: ${suma}`;
 })
+
+ */
+
+//CALL STACKS MICROTASKS MACROTASKS
+console.log("A");
+
+setTimeout(() => {
+  console.log("B");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("C");
+});
+
+console.log("D");
+
+// PRIMERO SE EJECUTA A
+//DESPUES SE EJECUTA D
+//DESPUES SE EJECUTA C
+// AL FINAL SE EJECUTA B
 

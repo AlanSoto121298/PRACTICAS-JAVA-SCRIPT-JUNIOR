@@ -367,18 +367,6 @@ const resultado = sumPares(numeros);
 console.log(resultado)
  */
         
-/* const boton = document.querySelector("#btn");
-const parrafo = document.querySelector("#text");
-
-boton.addEventListener("click",() =>{
-    if(parrafo.style.display === "none"){
-        parrafo.style.display = "block";
-    }else{
-        parrafo.style.display = "none";
-    }
-
-    
-}) */
 
 
 /*
@@ -447,7 +435,7 @@ boton.addEventListener("click",() => {
  */
 
 //CALL STACKS MICROTASKS MACROTASKS
-console.log("A");
+/* console.log("A");
 
 setTimeout(() => {
   console.log("B");
@@ -457,10 +445,127 @@ Promise.resolve().then(() => {
   console.log("C");
 });
 
-console.log("D");
+console.log("D"); */
 
-// PRIMERO SE EJECUTA A
-//DESPUES SE EJECUTA D
-//DESPUES SE EJECUTA C
-// AL FINAL SE EJECUTA B
+// PRIMERO SE EJECUTA A síncrono (call stack)
+//DESPUES SE EJECUTA D síncrono (call stack)
+//DESPUES SE EJECUTA C microtask (Promise)
+// AL FINAL SE EJECUTA B (setTimeout)
+
+/* CALL STACK 
+console.log()
+function foo() {}
+foo()
+
+if / for / while
+Math.random()
+JSON.parse()
+ */
+
+/* MICROTACKS
+Promise.then()
+Promise.catch()
+Promise.finally()
+
+async / await   // lo que va DESPUÉS del await
+queueMicrotask()
+
+MutationObserver
+ */
+
+/*MACROTASKS
+setTimeout()
+setInterval()
+
+setImmediate()     // Node.js
+requestAnimationFrame()
+
+DOM events:
+click
+scroll
+keydown
+load
+
+I/O (Node.js)
+
+ */
+
+/* const parrafo = document.querySelector("#parrafo");
+const boton = document.querySelector("#btn");
+
+boton.addEventListener("click", () => {
+     if (parrafo.textContent === "Cambiame") {
+        parrafo.textContent = "Cambiado";
+        parrafo.style.color = "red";
+     } else {
+        parrafo.textContent = "Cambiame";
+        parrafo.style.color = "black"; // importante resetear color
+     }
+});
+ */
+
+/* const app = document.querySelector("#app");
+const input = document.querySelector("#taskInput");
+const boton = document.querySelector("#addBtn");
+const lista= document.querySelector("#taskList");
+
+boton.addEventListener("click", () => {
+    const tarea = input.value.trim(); // obtenemos el valor del input
+    if (tarea === "") return; // no hace nada si el input está vacío
+
+    const li = document.createElement("li"); // creamos li de la tarea
+    li.textContent = tarea;
+
+    const doneBtn = document.createElement("button"); // creamos el botón "Hecho"
+    doneBtn.textContent = "Hecho";
+
+    // Listener del botón "Hecho" dentro del click del botón agregar
+    doneBtn.addEventListener("click", () => {
+        if (li.style.textDecoration === "line-through") {
+            li.style.textDecoration = "none"; // quitamos tachado
+        } else {
+            li.style.textDecoration = "line-through"; // agregamos tachado
+        }
+    });
+
+    li.appendChild(doneBtn); // agregamos el botón al li
+    lista.appendChild(li);   // agregamos el li a la lista
+
+    input.value = ""; // limpiamos el input
+}); */
+
+/* Tu tarea es escribir una función procesarNumeros que:
+
+Elimine los números duplicados.
+
+Filtre solo los números positivos (mayores que 0).
+
+Ordene los números de menor a mayor.
+
+Devuelva el array resultante.
+
+Puedes usar Set para eliminar duplicados.
+
+.filter() para filtrar positivos.
+
+.sort() para ordenar.
+
+Trata de no mutar el array original. */
+
+function procesarNumeros(){
+const numeros = [3, -1, 4, 3, 0, -2, 4, 5, 0, 2];
+
+const setNumeros = new Set (numeros);
+const numerosArray = [...setNumeros];
+
+const filtrar = numerosArray.filter(numero => numero > 0);
+
+ filtrar.sort((a, b) => a - b);
+
+console.log(filtrar)
+}
+
+procesarNumeros();
+
+
 

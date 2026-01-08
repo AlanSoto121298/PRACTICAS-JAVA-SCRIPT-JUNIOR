@@ -567,14 +567,14 @@ console.log(filtrar)
 
 procesarNumeros(); */
 
-function buscarNombres(nombres){
-    // eliminamos duplicados usando Set
+/* function buscarNombres(nombres){
+    
     const nombresUnicos = [...new Set(nombres)];
 
-    // ordenamos alfabéticamente
+ 
     nombresUnicos.sort((a, b) => a.localeCompare(b));
 
-    // devolvemos el resultado
+  
     return nombresUnicos;
 }
 
@@ -583,3 +583,5 @@ const resultado = buscarNombres([
 ]);
 
 console.log(resultado);
+ */
+

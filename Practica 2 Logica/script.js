@@ -72,3 +72,17 @@ Bombilla apagada pero caliente → interruptor 1
 Bombilla apagada y fría → interruptor 3
 
  Usás dos variables: luz y calor. */
+
+
+ //FIBONNACI
+ 
+ function fibonacci(n){
+    let fib = [0,1];  //empezamos con estos
+    for(let i = 2; i < n; i++){
+        fib[i] = fib[i-1] + fib [i-2];  // suma de los numeros anteriores 
+    }
+
+    return fib;
+ }
+
+ console.log(fibonacci(100));

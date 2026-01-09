@@ -1,7 +1,7 @@
 //FUNCION  QUE RECIBA UN STRING Y LO DEVUELVA AL REVES  CON FOR 
 /* function reverseString(str){
     let reversed = "";
-    for(let i = str.length -1; i >=0; i--){
+    for(let i = str.length -1; i >= 0; i--){
         reversed +=str[i];
     }
 
@@ -35,7 +35,7 @@ console.log(reverseString("TE ODIO JAVA SCRIPT NO ENTIENDO NI MADRES")); */
 
     return suma;
 }
-const resultado = sumPares([1,2,3,4,5,6,7,8,9,10]);
+const resultado = sumPares([1,2,3,4,5,6,7,8,umer9,10]);
 console.log(resultado) */
 
 /* function sumPares(array){
@@ -44,3 +44,31 @@ console.log(resultado) */
 
 const resultado = sumPares([1,2,3,4,5,6,7,8,9,10]);
 console.log(resultado) */
+
+/*
+Tienes 3 interruptores fuera de una habitación y 3 bombillas dentro.
+Cada interruptor corresponde a una bombilla, pero no sabes cuál.
+
+Solo puedes entrar una vez a la habitación para observar las bombillas.
+¿Cómo haces para saber qué interruptor corresponde a cada bombilla? */
+
+/*
+Cómo debería explicarse la solución (sin código)
+
+La solución correcta es conceptual:
+
+Encendés el interruptor 1 y lo dejás un rato
+
+Lo apagás
+
+Encendés el interruptor 2
+
+Entrás a la habitación:
+
+Bombilla encendida → interruptor 2
+
+Bombilla apagada pero caliente → interruptor 1
+
+Bombilla apagada y fría → interruptor 3
+
+ Usás dos variables: luz y calor. */

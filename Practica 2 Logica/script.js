@@ -254,7 +254,7 @@ console.log(resultado)
 
 //Numero mayor con REDUCE
 
-function numMayor(){
+/* function numMayor(){
     const numeros = [3,7,2,9,4];
     const mayor = numeros.reduce((ant,act) =>{
         return act > ant ? act : ant;
@@ -263,4 +263,19 @@ function numMayor(){
     console.log(mayor)
 }
 
-numMayor()
+numMayor() */
+
+//Cambiar Contenido del Boton del HTML
+
+const parrafo = document.querySelector("#texto");
+const boton = document.querySelector("#btn");
+
+boton.addEventListener("click", () => {
+  if (parrafo.textContent === "Texto original") {
+    parrafo.textContent = "Texto cambiado";
+    parrafo.style.color = "red";
+  } else {
+    parrafo.textContent = "Texto original";
+    parrafo.style.color = "black";
+  }
+});

@@ -217,7 +217,7 @@ No se trata de código, se trata de razonamiento lógico
 Hay un truco en la información disponible
 
 La pregunta clave: “¿De qué caja saco la fruta?” */
-
+/* 
 function numPar(array){
     
     const array2 = [];
@@ -233,4 +233,34 @@ function numPar(array){
 }
 
 const resultado = numPar([1,2,3,4,5,6,7,8,9,10]);
-console.log(resultado);
+console.log(resultado); */
+
+//Funcion que te duvuelve numero m ayor con este array const numeros = [3, 7, 2, 9, 4];
+
+/* function numMayor(arr){
+    let max = arr[0];
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i] > max){
+            max = arr[i]
+        }
+    }
+
+    return max;
+}
+
+const resultado = numMayor([3,7,2,9,4]);
+console.log(resultado)
+ */
+
+//Numero mayor con REDUCE
+
+function numMayor(){
+    const numeros = [3,7,2,9,4];
+    const mayor = numeros.reduce((ant,act) =>{
+        return act > ant ? act : ant;
+        
+    })
+    console.log(mayor)
+}
+
+numMayor()

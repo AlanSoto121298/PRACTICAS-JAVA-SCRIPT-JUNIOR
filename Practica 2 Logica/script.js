@@ -267,7 +267,7 @@ numMayor() */
 
 //Cambiar Contenido del Boton del HTML
 
-const parrafo = document.querySelector("#texto");
+/* const parrafo = document.querySelector("#texto");
 const boton = document.querySelector("#btn");
 
 boton.addEventListener("click", () => {
@@ -279,3 +279,27 @@ boton.addEventListener("click", () => {
     parrafo.style.color = "black";
   }
 });
+ */
+
+
+//Pequeño ejercicio de ciberseguridad evitar inner.html  y usar .textCont
+ //si usamos inner.html  y el usuario pone <script>alert('hack')</script>
+// Es un ataaque (Cross-Site Scripting)
+
+const input = document.querySelector("#nombre");
+const boton = document.querySelector("#btn");
+const resultado  = document.querySelector("#resultado");
+
+boton.addEventListener("click",() =>{
+  
+    //Tomamos el valor que ingrese el usuario desde el input
+    const nombreUsuario = input.value;
+
+    //Aqui lo mostramos en el "p" de forma segura
+    resultado.textContent = nombreUsuario;
+    //Con esto tendriamos una ventana emergente  resultado.innerHTML = nombreUsuario;
+
+
+    //limpiamos el input
+    input.value = "";
+})

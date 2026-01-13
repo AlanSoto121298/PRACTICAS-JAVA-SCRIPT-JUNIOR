@@ -260,16 +260,14 @@ fourSix(); */
 const resultado = findMaxx([3, 7, 2, 9, 4]);
 console.log(resultado);
  */
-function findMax(){
-    const numeros = [3,7,2,9,4];
-    const mayor = numeros.reduce((ant,act) =>{
-        return act > ant? act: ant;
-    })
-    console.log(mayor)
+/* function findMax(arr) {
+  return arr.reduce((max, current) => {
+    return current > max ? current : max;
+  });
 }
 
-findMax()
-
+console.log(findMax([3, 7, 2, 9, 4]));
+ */
 
 
 //Numero mayor con REDUCE

@@ -312,7 +312,7 @@ boton.addEventListener("click",() =>{
 "Buzz" si es múltiplo de 5
 
 "FizzBuzz" si es de ambos */
-
+/* 
 function fizzBuzz(){
   for(let i = 1; i <= 100; i++){
    if( i % 3 === 0 && i % 5 === 0){
@@ -327,4 +327,37 @@ function fizzBuzz(){
   }
 }
 
- fizzBuzz()
+ fizzBuzz() */
+
+ /*Escribí una función en JavaScript que recorra los números del 1 al 50.
+
+Para cada número:
+
+Si es múltiplo de 4, imprimí "Four".
+
+Si es múltiplo de 6, imprimí "Six".
+
+Si es múltiplo de 4 y de 6, imprimí "FourSix".
+
+Si no cumple ninguna condición, imprimí el número.
+
+Cada resultado debe mostrarse en una línea separada.
+
+*/
+
+function fourSix(){
+    for(let i = 1; i <= 50; i++){
+        if(i % 4 === 0 && i % 6 === 0){
+            console.log("FourSix");
+        } else if( i % 4 === 0){
+            console.log("Four");
+
+        } else if (i % 6 === 0){
+            console.log("Six");
+        } else{
+            console.log(i)
+        }
+    }
+}
+
+fourSix();

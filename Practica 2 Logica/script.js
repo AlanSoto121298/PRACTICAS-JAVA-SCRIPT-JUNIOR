@@ -286,7 +286,7 @@ boton.addEventListener("click", () => {
  //si usamos inner.html  y el usuario pone <script>alert('hack')</script>
 // Es un ataaque (Cross-Site Scripting)
 
-const input = document.querySelector("#nombre");
+/* const input = document.querySelector("#nombre");
 const boton = document.querySelector("#btn");
 const resultado  = document.querySelector("#resultado");
 
@@ -302,4 +302,29 @@ boton.addEventListener("click",() =>{
 
     //limpiamos el input
     input.value = "";
-})
+}) */
+
+
+//FizzBuzz Imprimir números del 1 al 100:
+
+/* "Fizz" si es múltiplo de 3
+
+"Buzz" si es múltiplo de 5
+
+"FizzBuzz" si es de ambos */
+
+function fizzBuzz(){
+  for(let i = 1; i <= 100; i++){
+   if( i % 3 === 0 && i % 5 === 0){
+    console.log("FizzBuzz")
+   } else if (i % 3 === 0){
+      console.log("Fizz")
+   } else if(i % 5 === 0){
+     console.log("Buzz")
+   } else{
+      console.log(i)
+   }
+  }
+}
+
+ fizzBuzz()

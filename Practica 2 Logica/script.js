@@ -286,7 +286,7 @@ numMayor() */
 
 /*👉 Escribe una función en JavaScript que reciba un número
 y retorne true si es par y false si es impar. */
-function parImpar(num) {
+/* function parImpar(num) {
   if (num % 2 === 0) {
     return true;
   } else {
@@ -297,4 +297,22 @@ function parImpar(num) {
 // Ejemplos:
 console.log(parImpar(2)); // true
 console.log(parImpar(3)); // false
+ */
+
+
+/*
+En un HTML que tenga un <ul id="lista"></ul> y un <button id="boton">Agregar</button>,
+cada vez que se haga click en el botón, se agregue un nuevo <li> a la lista con el texto "Elemento X",
+donde X es el número del elemento (1, 2, 3…). */
+
+const lista = document.querySelector("#lista");
+const boton = document.querySelector("#boton");
+let contador = 1;
+
+boton.addEventListener("click", () => {
+    const li = document.createElement("li");
+    li.textContent = `Elemento ${contador}`;
+    lista.appendChild(li);
+    contador++;
+})
 

@@ -305,7 +305,7 @@ En un HTML que tenga un <ul id="lista"></ul> y un <button id="boton">Agregar</bu
 cada vez que se haga click en el botón, se agregue un nuevo <li> a la lista con el texto "Elemento X",
 donde X es el número del elemento (1, 2, 3…). */
 
-const lista = document.querySelector("#lista");
+/* const lista = document.querySelector("#lista");
 const boton = document.querySelector("#boton");
 let contador = 1;
 
@@ -315,4 +315,16 @@ boton.addEventListener("click", () => {
     lista.appendChild(li);
     contador++;
 })
+ */
+
+const div1 = document.querySelector(".clase1");
+const div2 = document.querySelector(".clase2");
+const boton= document.querySelector("#boton");
+
+boton.addEventListener("click",() =>{
+    div1.style.background = "blue"
+    div2.style.background = "white"
+
+})
+
 

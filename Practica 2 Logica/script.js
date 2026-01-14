@@ -74,8 +74,8 @@ Bombilla apagada y fría → interruptor 3
  Usás dos variables: luz y calor. */
 
 
- //FIBONNACI
- 
+//FIBONNACI
+
 /*  function fibonacci(n){
     let fib = [0,1];  //empezamos con estos
     for(let i = 2; i < n; i++){
@@ -88,8 +88,8 @@ Bombilla apagada y fría → interruptor 3
  console.log(fibonacci(100)); */
 
 
- /*
- Día 1 – Condicionales básicas
+/*
+Día 1 – Condicionales básicas
 
 Objetivo: Pensar en decisiones simples (if/else).
 
@@ -103,17 +103,17 @@ Escribir una función que diga si un número es par o impar.
 
 /* 
 function numPar(array){
-    
-    const array2 = [];
+   
+   const array2 = [];
 
-    for(let i = 0; i < array.length; i++){
-        if(array[i] % 2 === 0){
-            array2.push(array[i]*2);
-            
-        }
-    }
+   for(let i = 0; i < array.length; i++){
+       if(array[i] % 2 === 0){
+           array2.push(array[i]*2);
+           
+       }
+   }
 
-   return array2;
+  return array2;
 }
 
 const resultado = numPar([1,2,3,4,5,6,7,8,9,10]);
@@ -167,7 +167,7 @@ boton.addEventListener("click", () => {
 
 
 //Pequeño ejercicio de ciberseguridad evitar inner.html  y usar .textCont
- //si usamos inner.html  y el usuario pone <script>alert('hack')</script>
+//si usamos inner.html  y el usuario pone <script>alert('hack')</script>
 // Es un ataaque (Cross-Site Scripting)
 
 /* const input = document.querySelector("#nombre");
@@ -213,7 +213,7 @@ function fizzBuzz(){
 
  fizzBuzz() */
 
- /*Escribí una función en JavaScript que recorra los números del 1 al 50.
+/*Escribí una función en JavaScript que recorra los números del 1 al 50.
 
 Para cada número:
 
@@ -282,3 +282,19 @@ console.log(findMax([3, 7, 2, 9, 4]));
 }
 
 numMayor() */
+
+
+/*👉 Escribe una función en JavaScript que reciba un número
+y retorne true si es par y false si es impar. */
+function parImpar(num) {
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Ejemplos:
+console.log(parImpar(2)); // true
+console.log(parImpar(3)); // false
+

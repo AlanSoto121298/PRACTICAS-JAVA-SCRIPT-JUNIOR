@@ -319,12 +319,26 @@ boton.addEventListener("click", () => {
 
 const div1 = document.querySelector(".clase1");
 const div2 = document.querySelector(".clase2");
-const boton= document.querySelector("#boton");
+const boton = document.querySelector("#boton");
+const boton2 = document.querySelector("#boton2");
+let contador = 1;
+let contador2 = 1;
 
-boton.addEventListener("click",() =>{
+
+boton.addEventListener("click", () => {
     div1.style.background = "blue"
-    div2.style.background = "white"
+    const li = document.createElement("li");
+    li.textContent = `Elemento ${contador}`;
+    div1.appendChild(li);
+    contador++;
 
 })
 
+boton2.addEventListener("click", () => {
+    div2.style.background = "gold";
+    const li2 = document.createElement("li");
+    li2.textContent = `Elemento ${contador2}`;
+    div2.appendChild(li2);
+    contador2++;
+})
 

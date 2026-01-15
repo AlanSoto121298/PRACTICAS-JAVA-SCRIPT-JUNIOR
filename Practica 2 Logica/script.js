@@ -440,7 +440,7 @@ en mayúscula y solo los que tengan más de 3 caracteres.
 const palabras = ["sol", "luna", "mar", "estrella"]; */
 
 
-const palabras = ["sol", "luna", "mar", "estrella"];
+/* const palabras = ["sol", "luna", "mar", "estrella"];
 
 function filtrarMayuscula(array) {
     const resultado = [];
@@ -456,4 +456,14 @@ function filtrarMayuscula(array) {
     return resultado;
 }
 
-console.log(filtrarMayuscula(palabras));
+console.log(filtrarMayuscula(palabras)); */
+
+// Filter + map
+
+const palabras = ["sol", "Mildred", "mar", "estrella","Arale"];
+
+const resultado = palabras
+.filter(p => p.length > 3)
+.map(p => p.toUpperCase());
+
+console.log(resultado);

@@ -369,7 +369,7 @@ Tienes un array de números y necesitas devolver un nuevo array con solo los nú
 
 const numeros = [1, 2, 3, 4, 5, 6]; */
 
-function numPar(array){
+/* function numPar(array){
     const array2 = [];
 
     for(let i = 0; i < array.length; i++){
@@ -383,4 +383,8 @@ function numPar(array){
 }
 
 const resultado = numPar([1,2,3,4,5,6]);
-console.log(resultado);
+console.log(resultado); */
+
+// con filter
+const numPar = array => array.filter(n => n % 2 === 0);
+console.log(numPar([2,400,520,2.4,6,10,12,11]))

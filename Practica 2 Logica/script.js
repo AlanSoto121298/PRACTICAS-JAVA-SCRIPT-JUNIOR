@@ -317,7 +317,7 @@ boton.addEventListener("click", () => {
 })
  */
 
-const div1 = document.querySelector(".clase1");
+/* const div1 = document.querySelector(".clase1");
 const div2 = document.querySelector(".clase2");
 const boton = document.querySelector("#boton");
 const boton2 = document.querySelector("#boton2");
@@ -342,3 +342,22 @@ boton2.addEventListener("click", () => {
     contador2++;
 })
 
+ */
+
+
+//CONTADOR
+
+const boton = document.querySelector("#mas");
+const span = document.querySelector("#numero");
+const boton2  = document.querySelector("#menos");
+let numero = 0;
+
+boton.addEventListener("click",() =>{
+    numero++;
+    span.textContent = numero;
+})
+
+boton2.addEventListener("click",() =>{
+    numero--;
+    span.textContent = numero;
+})

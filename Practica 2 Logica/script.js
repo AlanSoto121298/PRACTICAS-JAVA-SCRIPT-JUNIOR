@@ -386,5 +386,29 @@ const resultado = numPar([1,2,3,4,5,6]);
 console.log(resultado); */
 
 // con filter
-const numPar = array => array.filter(n => n % 2 === 0);
+/* const numPar = array => array.filter(n => n % 2 === 0);
 console.log(numPar([2,400,520,2.4,6,10,12,11]))
+
+
+ */
+
+/*
+Problema:
+Escribe una función que reciba un número n y devuelva la suma de 
+todos los números del 1 hasta n. 
+// Ejemplo:
+// sumaHasta(5) -> 15 (1+2+3+4+5)
+*/
+
+function sumaHasta(n){
+    let suma = 0;
+    for(let i = 1; i <= n ; i++){
+         suma+=i
+    }
+
+    return suma
+}
+
+const resultado = sumaHasta(5);
+console.log(resultado);
+

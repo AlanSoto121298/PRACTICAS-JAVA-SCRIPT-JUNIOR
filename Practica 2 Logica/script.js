@@ -431,3 +431,29 @@ console.log(sumaHasta(5));
 const resultado = restaHasta(5);
 console.log(resultado); */
 
+
+/*
+Problema:
+Dado un array de strings, devuelve un nuevo array con los strings 
+en mayúscula y solo los que tengan más de 3 caracteres.
+
+const palabras = ["sol", "luna", "mar", "estrella"]; */
+
+
+const palabras = ["sol", "luna", "mar", "estrella"];
+
+function filtrarMayuscula(array) {
+    const resultado = [];
+
+    for(let i = 0; i < array.length; i++){
+        const palabra =array[i];
+
+        if(palabra.length > 3){
+            resultado.push(palabra.toUpperCase());
+        }
+    }
+
+    return resultado;
+}
+
+console.log(filtrarMayuscula(palabras));

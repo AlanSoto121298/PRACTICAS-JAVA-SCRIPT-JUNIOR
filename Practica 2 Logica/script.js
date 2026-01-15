@@ -400,7 +400,7 @@ todos los números del 1 hasta n.
 // sumaHasta(5) -> 15 (1+2+3+4+5)
 */
 
-function sumaHasta(n){
+/* function sumaHasta(n){
     let suma = 0;
     for(let i = 1; i <= n ; i++){
          suma+=i
@@ -411,4 +411,23 @@ function sumaHasta(n){
 
 const resultado = sumaHasta(5);
 console.log(resultado);
+ */
+
+/* const sumaHasta = n => (n* (n+1)) / 2;
+console.log(sumaHasta(5));
+ */
+
+//Ejercicios
+
+/* function restaHasta(n){
+    let resta = 0;
+    for(let i = 1; i <= n; i++){
+        resta-=i;
+    }
+
+    return resta;
+}
+
+const resultado = restaHasta(5);
+console.log(resultado); */
 

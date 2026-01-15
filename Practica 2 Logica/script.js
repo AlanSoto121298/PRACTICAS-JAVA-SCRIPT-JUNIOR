@@ -347,7 +347,7 @@ boton2.addEventListener("click", () => {
 
 //CONTADOR
 
-const boton = document.querySelector("#mas");
+/* const boton = document.querySelector("#mas");
 const span = document.querySelector("#numero");
 const boton2  = document.querySelector("#menos");
 let numero = 0;
@@ -360,4 +360,27 @@ boton.addEventListener("click",() =>{
 boton2.addEventListener("click",() =>{
     numero--;
     span.textContent = numero;
-})
+}) */
+
+
+/*
+Problema:
+Tienes un array de números y necesitas devolver un nuevo array con solo los números pares.
+
+const numeros = [1, 2, 3, 4, 5, 6]; */
+
+function numPar(array){
+    const array2 = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % 2 === 0){
+            array2.push(array[i]);
+
+        }
+    }
+
+    return array2;
+}
+
+const resultado = numPar([1,2,3,4,5,6]);
+console.log(resultado);

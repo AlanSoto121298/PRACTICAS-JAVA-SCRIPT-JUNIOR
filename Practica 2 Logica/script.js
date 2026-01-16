@@ -497,26 +497,26 @@ console.log(reverseString("te odio javascript")); */
 
 //Ejemplo con OBJETOS
 
-let persona = {nombre: "Alan"};
+/* let persona = {nombre: "Alan"};
 let otraPersona = persona; //Las dos apuntan al mismo objeto 
 
 otraPersona.nombre = "Eric";
 
 console.log(persona.nombre);  //Eric
-console.log(otraPersona.nombre);  //Eric
+console.log(otraPersona.nombre);  //Eric */
 
 //Otra persona NO ES UNA COPIA , es la misma cosa que persona
 //cambiar algo en otraPersona tambien cambia en persona 
 
 //Ejemplo con ARRAYS xd
-
+/* 
 let frutas = ["Manzana","Mango"];
 let otrasFrutas = frutas;
 
 otrasFrutas.push("Banana");
 
 console.log(frutas);  //mANZANA mango banana
-console.log(otrasFrutas); //Manzaba banana mango
+console.log(otrasFrutas);  *///Manzaba banana mango
 
 //Los arrays tmbn son objetos
 //Ambas variables apuntan el mismo array
@@ -524,7 +524,7 @@ console.log(otrasFrutas); //Manzaba banana mango
 
 //Ejemplo con funcion
 
-function agregarElemento(array){
+/* function agregarElemento(array){
     array.push("pera");
 
 }
@@ -532,7 +532,22 @@ function agregarElemento(array){
 let misFrutas = ["manzana"];
 agregarElemento(misFrutas);
 
-console.log(misFrutas);
+console.log(misFrutas); */
 
 //La funcion recibe la referencia del array
 //Modificar el array dentro de la funcion afecta la variable afuera
+
+//Ejemplo con objeto y reasignacion
+
+let persona = {nombre:"Mildred"};
+
+function cambiar(obj){
+    obj = {nombre:"Luisa"};  //Reasignacion del objeto
+}
+
+cambiar(persona);
+
+console.log(persona.nombre) //Mildred
+
+//Reasignar objetos dentro de la funcion NO CAMBIA el objeto original
+//Solo cambiar propiedades si lo hace

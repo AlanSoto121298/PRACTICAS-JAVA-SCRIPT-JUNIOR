@@ -551,3 +551,16 @@ console.log(persona.nombre) //Mildred
 
 //Reasignar objetos dentro de la funcion NO CAMBIA el objeto original
 //Solo cambiar propiedades si lo hace
+
+/*
+Objetos y arrays → pasan por referencia
+
+Cambiar propiedades o elementos sí afecta afuera.
+
+Primitivos → pasan por valor
+
+Cambiar dentro de la función no afecta afuera.
+
+Reasignar objetos dentro de funciones → no afecta
+
+Solo la referencia que tenía la variable se pierde dentro de la función. */

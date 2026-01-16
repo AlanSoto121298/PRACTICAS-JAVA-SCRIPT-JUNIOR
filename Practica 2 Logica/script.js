@@ -494,3 +494,16 @@ console.log(reverseString("te odio javascript")); */
 
 
 //Cómo JavaScript maneja objetos y arrays: paso por referencia
+
+//Ejemplo con OBJETOS
+
+let persona = {nombre: "Alan"};
+let otraPersona = persona; //Las dos apuntan al mismo objeto 
+
+otraPersona.nombre = "Eric";
+
+console.log(persona.nombre);  //Eric
+console.log(otraPersona.nombre);  //Eric
+
+//Otra persona NO ES UNA COPIA , es la misma cosa que persona
+//cambiar algo en otraPersona tambien cambia en persona 

@@ -459,11 +459,26 @@ function filtrarMayuscula(array) {
 console.log(filtrarMayuscula(palabras)); */
 
 // Filter + map
-
+/* 
 const palabras = ["sol", "Mildred", "mar", "estrella","Arale"];
 
 const resultado = palabras
 .filter(p => p.length > 3)
 .map(p => p.toUpperCase());
 
-console.log(resultado);
+console.log(resultado); */
+
+
+//String en reversa XD
+
+function reverseString(str){
+  let reversed = "";
+
+  for(let i = str.length -1; i >= 0; i--){
+   reversed+=str[i];
+  }
+
+  return reversed
+}
+
+console.log(reverseString("Hola bebecito lin"));

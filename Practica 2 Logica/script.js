@@ -507,3 +507,17 @@ console.log(otraPersona.nombre);  //Eric
 
 //Otra persona NO ES UNA COPIA , es la misma cosa que persona
 //cambiar algo en otraPersona tambien cambia en persona 
+
+//Ejemplo con ARRAYS xd
+
+let frutas = ["Manzana","Mango"];
+let otrasFrutas = frutas;
+
+otrasFrutas.push("Banana");
+
+console.log(frutas);  //mANZANA mango banana
+console.log(otrasFrutas); //Manzaba banana mango
+
+//Los arrays tmbn son objetos
+//Ambas variables apuntan el mismo array
+//Push modifica el array original bro

@@ -17,8 +17,10 @@ console.log(reverseString("Mucho gusto alancito")); */
     return str.split("").reverse().join("");
 }
 
+
 console.log(reverseString("estoy hasta la madre"));
 console.log(reverseString("TE ODIO JAVA SCRIPT NO ENTIENDO NI MADRES")); */
+
 
 //sacar numeros pares y sumarlos
 
@@ -471,7 +473,7 @@ console.log(resultado); */
 
 //String en reversa XD
 
-function reverseString(str){
+/* function reverseString(str){
   let reversed = "";
 
   for(let i = str.length -1; i >= 0; i--){
@@ -481,4 +483,14 @@ function reverseString(str){
   return reversed
 }
 
-console.log(reverseString("Hola bebecito lin"));
+console.log(reverseString("Hola bebecito lin")); */
+
+//con split 
+/* function reverseString(str){
+    return str.split("").reverse().join("");
+}
+
+console.log(reverseString("te odio javascript")); */
+
+
+//Cómo JavaScript maneja objetos y arrays: paso por referencia

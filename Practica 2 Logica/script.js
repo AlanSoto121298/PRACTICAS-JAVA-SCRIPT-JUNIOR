@@ -521,3 +521,18 @@ console.log(otrasFrutas); //Manzaba banana mango
 //Los arrays tmbn son objetos
 //Ambas variables apuntan el mismo array
 //Push modifica el array original bro
+
+//Ejemplo con funcion
+
+function agregarElemento(array){
+    array.push("pera");
+
+}
+
+let misFrutas = ["manzana"];
+agregarElemento(misFrutas);
+
+console.log(misFrutas);
+
+//La funcion recibe la referencia del array
+//Modificar el array dentro de la funcion afecta la variable afuera

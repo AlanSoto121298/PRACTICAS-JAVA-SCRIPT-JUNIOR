@@ -25,12 +25,24 @@ console.log(reverseString("TE ODIO JAVA SCRIPT NO ENTIENDO NI MADRES")); */
 
 //LOGICA 19-1-2026
 //SCOPE LEXICO
-function padre() {
-  let secreto = "dulces";
+/* let comida = "pizza";
 
-  function hijo() {
-    console.log(secreto);
-  }
-
-  hijo();
+function comer() {
+  console.log(comida);
 }
+
+function casa() {
+  let comida = "hamburguesa";
+  comer();
+}
+
+casa(); */
+
+//Ejemplos de promesa con .then()
+function obtenerDatos(){
+    return new Promise((resolve,reject) =>{
+        setTimeout(() => resolve ("Datos recibidos"),1000)
+    });
+}
+
+obtenerDatos().then(data => console.log(data));  //Datos recibidos 

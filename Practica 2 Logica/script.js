@@ -39,18 +39,35 @@ function casa() {
 casa(); */
 
 //Ejemplos de promesa con .then()
-function obtenerDatos(){
+/* function obtenerDatos(){
     return new Promise((resolve,reject) =>{
         setTimeout(() => resolve ("Datos recibidos"),1000)
     });
 }
 
-obtenerDatos().then(data => console.log(data));  //Datos recibidos 
+obtenerDatos().then(data => console.log(data)); */  //Datos recibidos 
 
 //con async/await
-async function mostrarDatos() {
+/* async function mostrarDatos() {
     const data  = await obtenerDatos();
     console.log(data);
 }
 
-mostrarDatos();
+mostrarDatos(); */
+
+function reversedString(str){
+    let reversed = "";
+    for(let i = str.length -1; i >= 0; i--){
+        reversed+=str[i];
+    }
+
+    return reversed ;
+}
+
+console.log(reversedString("Hola"))
+
+function reversedString2(str){
+    return  str.split("").reverse().join("")
+}
+
+console.log(reversedString2("Coco"));

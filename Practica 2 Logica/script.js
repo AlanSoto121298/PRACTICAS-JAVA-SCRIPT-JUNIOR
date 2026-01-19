@@ -53,7 +53,7 @@ console.log(reversedString2("Coco")); */
 
 //Escribe una función sumarUnicos que reciba un array de números 
 // y devuelva la suma de los números que no se repiten.
-
+/* 
 function sumarUnicos(arr){
     let suma = 0;
 
@@ -75,4 +75,14 @@ function sumarUnicos(arr){
     return suma;
 }
 
-console.log(sumarUnicos([1,2,3,2,4]));
+console.log(sumarUnicos([1,2,3,2,4])); */
+
+//Forma mas corta
+
+function sumarUnicos(arr){
+    return arr
+    .filter(num => arr.indexOf(num)=== arr.lastIndexOf(num))
+    .reduce((suma,num) => suma +num,0)
+}
+
+console.log(sumarUnicos([1, 2, 3, 2, 4])); // 8

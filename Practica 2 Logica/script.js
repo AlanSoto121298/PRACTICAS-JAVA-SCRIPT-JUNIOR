@@ -46,3 +46,11 @@ function obtenerDatos(){
 }
 
 obtenerDatos().then(data => console.log(data));  //Datos recibidos 
+
+//con async/await
+async function mostrarDatos() {
+    const data  = await obtenerDatos();
+    console.log(data);
+}
+
+mostrarDatos();

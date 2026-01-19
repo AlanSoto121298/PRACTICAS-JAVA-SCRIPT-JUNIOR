@@ -1,25 +1,4 @@
-//FUNCION  QUE RECIBA UN STRING Y LO DEVUELVA AL REVES  CON FOR 
-/* function reverseString(str){
-    let reversed = "";
-    for(let i = str.length -1; i >= 0; i--){
-        reversed +=str[i];
-    }
 
-    return reversed;
-}
-
-console.log(reverseString("Alancito"));
-console.log(reverseString("Mucho gusto alancito")); */
-
-//FUNCION  QUE RECIBA UN STRING Y LO DEVUELVA AL REVES  CON SPLT
-
-/* function reverseString(str){
-    return str.split("").reverse().join("");
-}
-
-
-console.log(reverseString("estoy hasta la madre"));
-console.log(reverseString("TE ODIO JAVA SCRIPT NO ENTIENDO NI MADRES")); */
 
 
 
@@ -54,7 +33,7 @@ obtenerDatos().then(data => console.log(data)); */  //Datos recibidos
 }
 
 mostrarDatos(); */
-
+/* 
 function reversedString(str){
     let reversed = "";
     for(let i = str.length -1; i >= 0; i--){
@@ -63,11 +42,37 @@ function reversedString(str){
 
     return reversed ;
 }
-
-console.log(reversedString("Hola"))
+ */
+/* console.log(reversedString("Hola"))
 
 function reversedString2(str){
     return  str.split("").reverse().join("")
 }
 
-console.log(reversedString2("Coco"));
+console.log(reversedString2("Coco")); */
+
+//Escribe una función sumarUnicos que reciba un array de números 
+// y devuelva la suma de los números que no se repiten.
+
+function sumarUnicos(arr){
+    let suma = 0;
+
+    for(let i = 0; i < arr.length; i++){
+    let num = arr[i];
+    let contador  = 0;
+    //Contar cuantas veces aparece arr en todo el array
+    for(let j = 0; j < arr.length; j++){
+        if(arr[j] === num){
+            contador++;
+        }
+    }
+    //Si aparece solo 1 vez sumarlo
+    if(contador === 1){
+        suma += num;
+    }
+    }
+
+    return suma;
+}
+
+console.log(sumarUnicos([1,2,3,2,4]));

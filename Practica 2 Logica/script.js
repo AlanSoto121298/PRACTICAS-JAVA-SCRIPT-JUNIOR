@@ -79,10 +79,36 @@ console.log(sumarUnicos([1,2,3,2,4])); */
 
 //Forma mas corta
 
-function sumarUnicos(arr){
+/* function sumarUnicos(arr){
     return arr
     .filter(num => arr.indexOf(num)=== arr.lastIndexOf(num))
     .reduce((suma,num) => suma +num,0)
 }
 
-console.log(sumarUnicos([1, 2, 3, 2, 4])); // 8
+console.log(sumarUnicos([1, 2, 3, 2, 4])) */ // 8
+
+/* 
+function sumarUnicos(arr){
+    return arr
+    .filter(num => arr.indexOf(num) === arr.lastIndexOf(num))
+    .reduce((suma,num) => suma+num,0)
+}
+
+console.log(sumarUnicos([1, 2, 3, 3, 2, 4, 5])) */
+
+function numImpar(array){
+   
+      if(array % 2 === 0){
+           return "Es par"
+      } else{
+         return "Es impar"
+      }
+    
+   
+}
+
+console.log(numImpar(2));
+console.log(numImpar(1));
+
+
+

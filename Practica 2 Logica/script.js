@@ -96,7 +96,8 @@ function sumarUnicos(arr){
 
 console.log(sumarUnicos([1, 2, 3, 3, 2, 4, 5])) */
 
-function numImpar(array){
+//Funciones pares e impares
+/* function numImpar(array){
    
       if(array % 2 === 0){
            return "Es par"
@@ -108,7 +109,28 @@ function numImpar(array){
 }
 
 console.log(numImpar(2));
-console.log(numImpar(1));
+console.log(numImpar(1)); */
+
+
+//Escribe una función que reciba un array de números y devuelva la suma de todos los números pares.
+
+function sumPares(array){
+    let suma = 0;
+   
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % 2 === 0){
+          
+            suma+= array[i]
+        }
+    }
+
+    return suma
+}
+
+const resultado = sumPares([1,2,3,4,5,6,7,8,9,10]) //2,4,6,8,10
+
+console.log(resultado)
 
 
 

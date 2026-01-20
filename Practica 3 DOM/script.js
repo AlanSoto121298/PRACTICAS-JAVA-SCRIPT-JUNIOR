@@ -17,7 +17,7 @@ boton.addEventListener("click",() =>{
 
 //Cambiar texto de visible a invisible y viseversa 
 
-const parrafo = document.querySelector("#mensaje");
+/* const parrafo = document.querySelector("#mensaje");
 const boton = document.querySelector("#toggle");
 
 boton.addEventListener("click", () => {
@@ -27,4 +27,26 @@ boton.addEventListener("click", () => {
         parrafo.style.display = "none"
     }
 
+}) */
+
+//Contador que sume y reste
+
+const parrafo = document.querySelector("#contador");
+const botonSuma = document.querySelector("#sumar");
+const botonResta = document.querySelector("#restar");
+let contador = 0;
+
+botonSuma.addEventListener("click", () => {
+    contador++;
+    parrafo.textContent = contador
+
+
+})
+
+botonResta.addEventListener("click", () => {
+    if (contador > 0) {
+        contador--;
+        parrafo.textContent = contador
+
+    }
 })

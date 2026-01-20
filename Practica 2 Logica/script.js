@@ -114,7 +114,7 @@ console.log(numImpar(1)); */
 
 //Escribe una función que reciba un array de números y devuelva la suma de todos los números pares.
 
-function sumPares(array){
+/* function sumPares(array){
     let suma = 0;
    
 
@@ -130,7 +130,23 @@ function sumPares(array){
 
 const resultado = sumPares([1,2,3,4,5,6,7,8,9,10]) //2,4,6,8,10
 
-console.log(resultado)
+console.log(resultado) */
 
+//Dado un array de números, devuelve un nuevo array con los
+//  números multiplicados por 2, pero solo si son mayores que 5.
 
+function sumaMayores(array){
+    const array2 =[];
+    
+    for(let i = 0; i < array.length; i++){
+        if(array[i] > 5){
+            array2.push(array[i] * 2)
+        }
+    }
+
+    return array2;
+}
+
+const resultado = sumaMayores([1,2,3,4,5,6,7,8,9,10]); //2,4,6,8,10  
+console.log(resultado) //4,8,12,,16,20
 

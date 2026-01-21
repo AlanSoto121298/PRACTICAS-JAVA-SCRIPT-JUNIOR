@@ -135,7 +135,7 @@ console.log(resultado) */
 //Dado un array de números, devuelve un nuevo array con los
 //  números multiplicados por 2, pero solo si son mayores que 5.
 
-function sumaMayores(array){
+/* function sumaMayores(array){
     const array2 =[];
     
     for(let i = 0; i < array.length; i++){
@@ -148,5 +148,44 @@ function sumaMayores(array){
 }
 
 const resultado = sumaMayores([1,2,3,4,5,6,7,8,9,10]); //
-console.log(resultado) 
+console.log(resultado)  */
 
+/*
+Crea una función llamada obtenerUsuariosMayores que:
+
+Reciba el array de usuarios como parámetro.
+
+Devuelva un nuevo array que contenga solo los usuarios mayores o iguales a 18 años.
+
+El array devuelto debe tener solo los nombres de esos usuarios.
+
+No debe modificar el array original.
+const usuarios = [
+  { nombre: "Ana", edad: 17 },
+  { nombre: "Luis", edad: 22 },
+  { nombre: "María", edad: 19 },
+  { nombre: "Pedro", edad: 15 },
+  { nombre: "Sofía", edad: 30 }
+];
+ */
+
+function obtenerUsuariosMayores(usuarios) {
+    const array2 = [];
+
+    for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i].edad >= 18) {
+            array2.push(usuarios[i].nombre);
+        }
+    }
+
+    return array2;
+
+}
+
+const resultado = obtenerUsuariosMayores([{ nombre: "Ana", edad: 17 },
+{ nombre: "Luis", edad: 22 },
+{ nombre: "María", edad: 19 },
+{ nombre: "Pedro", edad: 15 },
+{ nombre: "Sofía", edad: 30 }])
+
+console.log(resultado)

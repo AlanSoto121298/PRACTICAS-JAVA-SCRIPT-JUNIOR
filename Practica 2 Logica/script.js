@@ -169,7 +169,7 @@ const usuarios = [
 ];
  */
 
-function obtenerUsuariosMayores(usuarios) {
+/* function obtenerUsuariosMayores(usuarios) {
     const array2 = [];
 
     for (let i = 0; i < usuarios.length; i++) {
@@ -189,3 +189,43 @@ const resultado = obtenerUsuariosMayores([{ nombre: "Ana", edad: 17 },
 { nombre: "Sofía", edad: 30 }])
 
 console.log(resultado)
+ */
+
+/*
+Crea una función llamada obtenerProductosDisponibles que:
+
+Reciba el array de productos.
+
+Devuelva un nuevo array con solo los productos que estén disponibles.
+
+Del array resultante, devuelve solo los nombres de los productos.
+
+No modifiques el array original.
+const productos = [
+  { nombre: "Laptop", precio: 1200, disponible: true },
+  { nombre: "Mouse", precio: 25, disponible: true },
+  { nombre: "Teclado", precio: 45, disponible: false },
+  { nombre: "Monitor", precio: 300, disponible: true },
+  { nombre: "Impresora", precio: 200, disponible: false }
+];
+ */
+
+function obtenerProductosDisponibles(productos){
+   const productosDisponibles = [];
+
+   for(let i = 0; i < productos.length; i++){
+         if(productos[i].disponible === true){
+              productosDisponibles.push(productos[i].nombre)
+         }
+   }
+
+   return productosDisponibles
+}
+
+const resultado = obtenerProductosDisponibles([{ nombre: "Laptop", precio: 1200, disponible: true },
+  { nombre: "Mouse", precio: 25, disponible: true },
+  { nombre: "Teclado", precio: 45, disponible: false },
+  { nombre: "Monitor", precio: 300, disponible: true },
+  { nombre: "Impresora", precio: 200, disponible: false }])
+
+  console.log(resultado)

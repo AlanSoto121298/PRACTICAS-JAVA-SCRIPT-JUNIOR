@@ -210,7 +210,7 @@ const productos = [
 ];
  */
 
-function obtenerProductosDisponibles(productos){
+/* function obtenerProductosDisponibles(productos){
    const productosDisponibles = [];
 
    for(let i = 0; i < productos.length; i++){
@@ -228,4 +228,55 @@ const resultado = obtenerProductosDisponibles([{ nombre: "Laptop", precio: 1200,
   { nombre: "Monitor", precio: 300, disponible: true },
   { nombre: "Impresora", precio: 200, disponible: false }])
 
-  console.log(resultado)
+  console.log(resultado) */
+
+
+
+  /*
+  Crea una función llamada calcularPromedioAprobados que:
+
+Reciba el array de estudiantes.
+
+Considere aprobados solo a los estudiantes con calificación mayor o igual a 6.
+
+Calcule el promedio de las calificaciones de los estudiantes aprobados.
+
+Devuelva ese promedio como número.
+
+No modifique el array original.
+
+const estudiantes = [
+  { nombre: "Carlos", calificacion: 8 },
+  { nombre: "Lucía", calificacion: 5 },
+  { nombre: "Miguel", calificacion: 9 },
+  { nombre: "Ana", calificacion: 4 },
+  { nombre: "Sofía", calificacion: 7 }
+];
+
+   */
+
+function calcularPromedioAprobados(estudiantes){
+   let sumaCalificacines = 0;
+   let cantidadAprobados = 0;
+
+   for(let i = 0; i < estudiantes.length; i++){
+    if(estudiantes[i].calificacion >= 6){
+        sumaCalificacines += estudiantes[i].calificacion;
+        cantidadAprobados++
+    }
+   }
+  return sumaCalificacines / cantidadAprobados;
+
+}
+
+const resultado = calcularPromedioAprobados([
+  { nombre: "Carlos", calificacion: 8 },
+  { nombre: "Lucía", calificacion: 5 },
+  { nombre: "Miguel", calificacion: 9 },
+  { nombre: "Ana", calificacion: 4 },
+  { nombre: "Sofía", calificacion: 7 }
+]);
+
+console.log(resultado);
+
+

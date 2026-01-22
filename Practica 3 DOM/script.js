@@ -78,7 +78,7 @@ Agrégalo al final de la lista (#lista-compra)
 3️⃣ Si el input está vacío y se presiona el botón, no agregar 
 nada y mostrar un alert que diga: "Escribe un item primero". */
 
-const input = document.querySelector("#nuevo-item");
+/* const input = document.querySelector("#nuevo-item");
 const boton = document.querySelector("#agregar");
 const lista = document.querySelector("#lista-compra");
 
@@ -95,4 +95,24 @@ boton.addEventListener("click",() =>{
 
     input.value = "";
     
+}) */
+
+
+/*
+1️⃣ Cada vez que se haga click en el botón, el número en <h2> debe incrementar en 1.
+2️⃣ No necesitas alert ni input, solo actualizar el número. */
+
+
+const titulo = document.querySelector("#contador");
+const boton = document.querySelector("#click-btn");
+let contador = 0;
+
+boton.addEventListener("click", () => {
+    contador++;
+    titulo.textContent = contador;
+    if (contador > 5) {
+        titulo.style.color = "red"
+    }
 })
+
+

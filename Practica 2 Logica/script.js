@@ -255,7 +255,7 @@ const estudiantes = [
 
    */
 
-function calcularPromedioAprobados(estudiantes){
+/* function calcularPromedioAprobados(estudiantes){
    let sumaCalificacines = 0;
    let cantidadAprobados = 0;
 
@@ -280,3 +280,50 @@ const resultado = calcularPromedioAprobados([
 console.log(resultado);
 
 
+ */
+
+/*
+🧠 Ejercicio: obtenerUsuariosActivos
+Dado el siguiente array:
+const usuarios = [
+  { nombre: "Ana", edad: 28, activo: true },
+  { nombre: "Luis", edad: 35, activo: false },
+  { nombre: "Carlos", edad: 22, activo: true },
+  { nombre: "Marta", edad: 40, activo: false },
+  { nombre: "Sofía", edad: 30, activo: true }
+];
+
+📌 Consigna
+
+Crea una función llamada obtenerUsuariosActivos que:
+
+Reciba el array de usuarios.
+
+Devuelva un nuevo array.
+
+Incluya solo los usuarios que estén activos.
+
+Del array resultante, devuelva solo los nombres.
+
+No modifique el array original. */
+
+function obtenerUsuariosActivos(usuarios){
+   const array = [];
+
+   for(let i = 0; i < usuarios.length; i++){
+    if(usuarios[i].activo === true){
+        array.push(usuarios[i].nombre)
+    }
+   }
+
+   return array;
+}  
+
+const resultado = obtenerUsuariosActivos([{ nombre: "Ana", edad: 28, activo: true },
+  { nombre: "Luis", edad: 35, activo: false },
+  { nombre: "Carlos", edad: 22, activo: true },
+  { nombre: "Marta", edad: 40, activo: false },
+  { nombre: "Sofía", edad: 30, activo: true }])
+
+
+  console.log(resultado);

@@ -307,7 +307,7 @@ Del array resultante, devuelva solo los nombres.
 
 No modifique el array original. */
 
-function obtenerUsuariosActivos(usuarios){
+/* function obtenerUsuariosActivos(usuarios){
    const array = [];
 
    for(let i = 0; i < usuarios.length; i++){
@@ -326,4 +326,22 @@ const resultado = obtenerUsuariosActivos([{ nombre: "Ana", edad: 28, activo: tru
   { nombre: "Sofía", edad: 30, activo: true }])
 
 
-  console.log(resultado);
+  console.log(resultado); */
+
+  //VERSION CON  FILTER Y MAP
+
+  function obtenerUsuariosActivos(usuarios){
+    return usuarios
+    .filter(usuario => usuario.activo === true)
+    .map(usuario => usuario.nombre);
+  }
+
+  const resultado = obtenerUsuariosActivos([
+  { nombre: "Ana", edad: 28, activo: true },
+  { nombre: "Luis", edad: 35, activo: false },
+  { nombre: "Carlos", edad: 22, activo: true },
+  { nombre: "Marta", edad: 40, activo: false },
+  { nombre: "Sofía", edad: 30, activo: true }
+]);
+
+console.log(resultado);

@@ -330,7 +330,7 @@ const resultado = obtenerUsuariosActivos([{ nombre: "Ana", edad: 28, activo: tru
 
   //VERSION CON  FILTER Y MAP
 
-  function obtenerUsuariosActivos(usuarios){
+/*   function obtenerUsuariosActivos(usuarios){
     return usuarios
     .filter(usuario => usuario.activo === true)
     .map(usuario => usuario.nombre);
@@ -345,3 +345,54 @@ const resultado = obtenerUsuariosActivos([{ nombre: "Ana", edad: 28, activo: tru
 ]);
 
 console.log(resultado);
+ */
+
+
+/*
+Crea una función llamada procesarPedidos que:
+
+Reciba el array de pedidos.
+
+Devuelva un nuevo array.
+
+Incluya solo los pedidos que estén entregados.
+
+Del array resultante, devuelva solo los nombres de los clientes.
+
+No modifique el array original.
+
+const pedidos = [
+  { cliente: "Juan", total: 120, entregado: true },
+  { cliente: "Ana", total: 80, entregado: false },
+  { cliente: "Pedro", total: 200, entregado: true },
+  { cliente: "Lucía", total: 50, entregado: false },
+  { cliente: "Marcos", total: 150, entregado: true }
+];
+*/
+
+function procesarPedidos(pedidos){
+    const pedidosEntregados = [];
+    let totalEntregado = 0;
+
+    for(let i = 0; i < pedidos.length; i++){
+        if(pedidos[i].entregado === true){
+            pedidosEntregados.push(pedidos[i].cliente);
+            totalEntregado += pedidos[i].total;
+        }
+    }
+
+    return {
+        pedidosEntregados: pedidosEntregados,
+        totalEntregado: totalEntregado
+    }
+}
+
+const resultado = procesarPedidos([
+  { cliente: "Juan", total: 120, entregado: true },
+  { cliente: "Ana", total: 80, entregado: false },
+  { cliente: "Pedro", total: 200, entregado: true },
+  { cliente: "Lucía", total: 50, entregado: false },
+  { cliente: "Marcos", total: 150, entregado: true }
+]);
+
+console.log(resultado)

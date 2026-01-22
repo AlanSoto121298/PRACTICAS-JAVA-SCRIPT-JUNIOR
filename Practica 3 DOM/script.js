@@ -51,7 +51,7 @@ botonResta.addEventListener("click", () => {
     }
 }) */
 
-const titulo = document.querySelector("#titulo");
+/* const titulo = document.querySelector("#titulo");
 const boton = document.querySelector("#btn");
 const lista = document.querySelector("#lista");
 
@@ -62,5 +62,37 @@ boton.addEventListener("click", () => {
     nuevoLi.textContent = "Item 3";
     lista.appendChild(nuevoLi);
 
-})
+}) */
 
+/*
+1️⃣ Al hacer click en el botón Agregar:
+
+Toma el texto del input (#nuevo-item)
+
+Crea un <li> con ese texto
+
+Agrégalo al final de la lista (#lista-compra)
+
+2️⃣ Después de agregarlo, limpia el input (que quede vacío para escribir otro item).
+
+3️⃣ Si el input está vacío y se presiona el botón, no agregar 
+nada y mostrar un alert que diga: "Escribe un item primero". */
+
+const input = document.querySelector("#nuevo-item");
+const boton = document.querySelector("#agregar");
+const lista = document.querySelector("#lista-compra");
+
+
+boton.addEventListener("click",() =>{
+    if(input.value.trim() === ""){
+        alert("Escribe un item primero");
+        return;
+    }
+
+    const li = document.createElement("li");
+    li.textContent = input.value;
+    lista.appendChild(li)
+
+    input.value = "";
+    
+})

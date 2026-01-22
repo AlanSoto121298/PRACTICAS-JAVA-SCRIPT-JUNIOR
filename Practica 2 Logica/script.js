@@ -370,7 +370,7 @@ const pedidos = [
 ];
 */
 
-function procesarPedidos(pedidos){
+/* function procesarPedidos(pedidos){
     const pedidosEntregados = [];
     let totalEntregado = 0;
 
@@ -395,4 +395,5 @@ const resultado = procesarPedidos([
   { cliente: "Marcos", total: 150, entregado: true }
 ]);
 
-console.log(resultado)
+console.log(resultado) */
+

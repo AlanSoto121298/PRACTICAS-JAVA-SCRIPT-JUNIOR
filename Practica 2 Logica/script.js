@@ -428,10 +428,51 @@ const resultado = multiplicarFiltrar([1, 2, 3, 4, 5]);
 console.log(resultado); */
 
 //VERSION MÁS CORTA
-const numeros =[1,2,3,4,5];
+/* const numeros =[1,2,3,4,5];
 
 const resultado = numeros
 .map(n=> n * 2)
 .filter(n => n > 5);
+
+console.log(resultado) */
+
+
+/*
+const personas = [
+  { nombre: "Ana", edad: 15 },
+  { nombre: "Luis", edad: 22 },
+  { nombre: "Marta", edad: 18 },
+  { nombre: "Juan", edad: 30 },
+  { nombre: "Sofía", edad: 12 }
+];
+
+Tareas:
+
+    Crear un nuevo array solo con las personas mayores de 18.
+
+    Transformar ese array para que contenga solo sus nombres en mayúsculas.
+
+    Mostrar el resultado en consola. */
+
+function people(personas){
+    const personasMayores = [];
+
+    for(let i = 0; i < personas.length; i++){
+        if(personas[i].edad > 18){
+            personasMayores.push(personas[i].nombre.toUpperCase())
+        }
+    }
+
+    return personasMayores
+}
+
+const resultado = people([
+  { nombre: "Ana", edad: 15 },
+  { nombre: "Luis", edad: 22 },
+  { nombre: "Marta", edad: 18 },
+  { nombre: "Juan", edad: 30 },
+  { nombre: "Sofía", edad: 12 }
+]);
+ 
 
 console.log(resultado)

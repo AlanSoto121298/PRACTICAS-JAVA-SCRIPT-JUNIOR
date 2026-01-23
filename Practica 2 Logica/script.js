@@ -515,7 +515,7 @@ Tareas:
 
 
 
-function descuentoFiltrar(productos){
+/* function descuentoFiltrar(productos){
     const productosConDescuento = [];
    
 
@@ -543,4 +543,4 @@ const resultado = descuentoFiltrar([ { nombre: "Camisa", precio: 250, stock: 10 
   { nombre: "Gorra", precio: 150, stock: 20 },
   { nombre: "Chaqueta", precio: 1200, stock: 2 }])
 
-  console.log(resultado);
+  console.log(resultado);    */

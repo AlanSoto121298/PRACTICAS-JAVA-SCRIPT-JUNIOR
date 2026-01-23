@@ -408,23 +408,30 @@ console.log(resultado) */
 
 // Escribí tu código aquí:
  
-function numbers(numeros){
+/* function multiplicarFiltrar(numeros){
     const arrayMultiplicada = [];
-    const arrayFiltrada = [];
+    const arrayFiltrar = [];
 
     for(let i = 0; i < numeros.length; i++){
-        arrayMultiplicada.push(numeros[i]*2)
+        arrayMultiplicada.push(numeros[i] * 2);
     }
 
-    for(let i = 0; i < numeros.length; i++){
-        if(arrayMultiplicada[i] > 5){
-            arrayFiltrada.push(arrayMultiplicada[i])
+    for(let j = 0; j < numeros.length; j++){
+        if(arrayMultiplicada[j] > 5){
+            arrayFiltrar.push(arrayMultiplicada[j])
         }
     }
-     
-    return arrayFiltrada;
-    
+    return arrayFiltrar;
 }
 
-const resultado = numbers([1, 2, 3, 4, 5]);
-console.log(resultado);
+const resultado = multiplicarFiltrar([1, 2, 3, 4, 5]);
+console.log(resultado); */
+
+//VERSION MÁS CORTA
+const numeros =[1,2,3,4,5];
+
+const resultado = numeros
+.map(n=> n * 2)
+.filter(n => n > 5);
+
+console.log(resultado)

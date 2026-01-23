@@ -397,3 +397,34 @@ const resultado = procesarPedidos([
 
 console.log(resultado) */
 
+
+// Se supone que tienes este arreglo:
+// const numeros = [1, 2, 3, 4, 5];
+
+// Queremos:
+// 1️⃣ Crear un nuevo arreglo que contenga cada número multiplicado por 2
+// 2️⃣ Filtrar solo los números mayores a 5
+// 3️⃣ Mostrar el resultado final en consola
+
+// Escribí tu código aquí:
+ 
+function numbers(numeros){
+    const arrayMultiplicada = [];
+    const arrayFiltrada = [];
+
+    for(let i = 0; i < numeros.length; i++){
+        arrayMultiplicada.push(numeros[i]*2)
+    }
+
+    for(let i = 0; i < numeros.length; i++){
+        if(arrayMultiplicada[i] > 5){
+            arrayFiltrada.push(arrayMultiplicada[i])
+        }
+    }
+     
+    return arrayFiltrada;
+    
+}
+
+const resultado = numbers([1, 2, 3, 4, 5]);
+console.log(resultado);

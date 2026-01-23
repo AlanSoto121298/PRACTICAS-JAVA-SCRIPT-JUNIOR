@@ -454,7 +454,7 @@ Tareas:
 
     Mostrar el resultado en consola. */
 
-function people(personas){
+/* function people(personas){
     const personasMayores = [];
 
     for(let i = 0; i < personas.length; i++){
@@ -475,4 +475,72 @@ const resultado = people([
 ]);
  
 
-console.log(resultado)
+console.log(resultado) */
+
+//CON FILTRO
+/* const personas = [
+  { nombre: "Ana", edad: 15 },
+  { nombre: "Luis", edad: 22 },
+  { nombre: "Marta", edad: 18 },
+  { nombre: "Juan", edad: 30 },
+  { nombre: "Sofía", edad: 12 }
+];
+
+const resultado = personas
+.filter(p => p.edad > 18)
+.map(p => p.nombre.toUpperCase());
+
+console.log(resultado);
+ */
+
+
+/*
+const productos = [
+  { nombre: "Camisa", precio: 250, stock: 10 },
+  { nombre: "Pantalón", precio: 400, stock: 0 },
+  { nombre: "Zapatos", precio: 800, stock: 5 },
+  { nombre: "Gorra", precio: 150, stock: 20 },
+  { nombre: "Chaqueta", precio: 1200, stock: 2 }
+];
+
+Tareas:
+
+    Filtrar los productos que estén en stock (stock > 0).
+
+    Aplicar un descuento del 10% a todos los productos filtrados.
+
+    Crear un nuevo array que contenga objetos con nombre y precio con descuento solamente.
+
+    Mostrar el resultado en consola. */
+
+
+
+function descuentoFiltrar(productos){
+    const productosConDescuento = [];
+   
+
+    for(let i = 0; i < productos.length; i++){
+        if(productos[i].stock > 0){
+            const precioDescuento = productos[i].precio * 0.9
+
+            productosConDescuento.push({
+                nombre : productos[i].nombre,
+                precio: precioDescuento
+            })
+        }
+
+            
+    }
+
+    return productosConDescuento;
+
+   
+}
+
+const resultado = descuentoFiltrar([ { nombre: "Camisa", precio: 250, stock: 10 },
+  { nombre: "Pantalón", precio: 400, stock: 0 },
+  { nombre: "Zapatos", precio: 800, stock: 5 },
+  { nombre: "Gorra", precio: 150, stock: 20 },
+  { nombre: "Chaqueta", precio: 1200, stock: 2 }])
+
+  console.log(resultado);

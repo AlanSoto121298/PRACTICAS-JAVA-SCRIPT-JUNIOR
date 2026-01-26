@@ -544,3 +544,23 @@ const resultado = descuentoFiltrar([ { nombre: "Camisa", precio: 250, stock: 10 
   { nombre: "Chaqueta", precio: 1200, stock: 2 }])
 
   console.log(resultado);    */
+
+
+  //Palindromo 
+
+  function esPalindromo(palabra){
+    palabra = palabra.toLowerCase();
+    let longitud = palabra.length;
+
+    for(let i = 0; i < longitud /2; i++){
+        if(palabra[i] !== palabra[longitud -1 -i]){
+            return false;
+        }
+    }
+
+    return true;
+  }
+
+  console.log(esPalindromo("reconocer"));
+    console.log(esPalindromo("alancito"));
+

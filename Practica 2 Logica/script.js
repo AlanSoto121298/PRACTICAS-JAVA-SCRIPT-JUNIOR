@@ -548,7 +548,7 @@ const resultado = descuentoFiltrar([ { nombre: "Camisa", precio: 250, stock: 10 
 
   //Palindromo 
 
-  function esPalindromo(palabra){
+ /*  function esPalindromo(palabra){
     palabra = palabra.toLowerCase();
     let longitud = palabra.length;
 
@@ -562,5 +562,18 @@ const resultado = descuentoFiltrar([ { nombre: "Camisa", precio: 250, stock: 10 
   }
 
   console.log(esPalindromo("reconocer"));
+    console.log(esPalindromo("alancito"));
+ */
+
+function esPalindromo(palabra){
+ palabra = palabra.toLowerCase();
+
+ let palabraInvertida = palabra.split('').reverse().join('');
+
+ return palabra === palabraInvertida;
+ 
+}
+
+ console.log(esPalindromo("reconocer"));
     console.log(esPalindromo("alancito"));
 

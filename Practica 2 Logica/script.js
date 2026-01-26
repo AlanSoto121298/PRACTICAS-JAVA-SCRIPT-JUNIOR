@@ -565,7 +565,7 @@ const resultado = descuentoFiltrar([ { nombre: "Camisa", precio: 250, stock: 10 
     console.log(esPalindromo("alancito"));
  */
 
-function esPalindromo(palabra){
+/* function esPalindromo(palabra){
  palabra = palabra.toLowerCase();
 
  let palabraInvertida = palabra.split('').reverse().join('');
@@ -576,4 +576,33 @@ function esPalindromo(palabra){
 
  console.log(esPalindromo("reconocer"));
     console.log(esPalindromo("alancito"));
+ */
 
+
+
+//Ejemplo de patrones de diseño
+/*
+Ejercicio 1 — Reglas diferentes (MUY básico)
+🧾 Vida real
+
+Una tienda cobra descuento diferente según el tipo de cliente:
+
+normal → 5%
+
+socio → 10%
+
+empleado → 20% */
+
+const descuentos = {
+    normal: monto => monto * 0.05,
+    socio: monto => monto * 0.10,
+    empleado: monto => monto * 0.20
+};
+
+function calcularDescuento(monto, tipoCliente){
+    return descuentos[tipoCliente](monto)
+}
+
+console.log(calcularDescuento(1000, 'normal'));
+console.log(calcularDescuento(1000, 'socio'));
+console.log(calcularDescuento(1000, 'empleado'));

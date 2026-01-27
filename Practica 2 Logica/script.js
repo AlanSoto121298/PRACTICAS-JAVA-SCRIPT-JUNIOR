@@ -676,7 +676,7 @@ console.log(inverse("pene")) */
 
   */
 
-function repetir(arr){
+/* function repetir(arr){
    const resultado = [];
 
    for(let i = 0; i < arr.length; i++){
@@ -689,5 +689,26 @@ function repetir(arr){
    return resultado
 }
 
-console.log(repetir([1, 3, 2])); 
+console.log(repetir([1, 3, 2]));  */
+
+/*
+Escribí una función que reciba un array de números y devuelva un nuevo array donde:
+
+Cada número par se multiplica por 2
+
+Cada número impar se multiplica por 3 */
+
+function parImpar(arr) {
+    const resultado = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            resultado.push(arr[i] * 2);
+        } else {
+            resultado.push(arr[i] * 3);
+        }
+    }
+    return resultado;
+}
+
+console.log(parImpar([1,2,3,4,5,6,7,8,10]))
   

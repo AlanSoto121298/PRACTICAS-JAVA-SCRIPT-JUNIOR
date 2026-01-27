@@ -232,8 +232,8 @@ const resultado = obtenerProductosDisponibles([{ nombre: "Laptop", precio: 1200,
 
 
 
-  /*
-  Crea una función llamada calcularPromedioAprobados que:
+/*
+Crea una función llamada calcularPromedioAprobados que:
 
 Reciba el array de estudiantes.
 
@@ -246,14 +246,14 @@ Devuelva ese promedio como número.
 No modifique el array original.
 
 const estudiantes = [
-  { nombre: "Carlos", calificacion: 8 },
-  { nombre: "Lucía", calificacion: 5 },
-  { nombre: "Miguel", calificacion: 9 },
-  { nombre: "Ana", calificacion: 4 },
-  { nombre: "Sofía", calificacion: 7 }
+{ nombre: "Carlos", calificacion: 8 },
+{ nombre: "Lucía", calificacion: 5 },
+{ nombre: "Miguel", calificacion: 9 },
+{ nombre: "Ana", calificacion: 4 },
+{ nombre: "Sofía", calificacion: 7 }
 ];
 
-   */
+ */
 
 /* function calcularPromedioAprobados(estudiantes){
    let sumaCalificacines = 0;
@@ -328,7 +328,7 @@ const resultado = obtenerUsuariosActivos([{ nombre: "Ana", edad: 28, activo: tru
 
   console.log(resultado); */
 
-  //VERSION CON  FILTER Y MAP
+//VERSION CON  FILTER Y MAP
 
 /*   function obtenerUsuariosActivos(usuarios){
     return usuarios
@@ -407,7 +407,7 @@ console.log(resultado) */
 // 3️⃣ Mostrar el resultado final en consola
 
 // Escribí tu código aquí:
- 
+
 /* function multiplicarFiltrar(numeros){
     const arrayMultiplicada = [];
     const arrayFiltrar = [];
@@ -546,24 +546,24 @@ const resultado = descuentoFiltrar([ { nombre: "Camisa", precio: 250, stock: 10 
   console.log(resultado);    */
 
 
-  //Palindromo 
+//Palindromo 
 
- /*  function esPalindromo(palabra){
-    palabra = palabra.toLowerCase();
-    let longitud = palabra.length;
+/*  function esPalindromo(palabra){
+   palabra = palabra.toLowerCase();
+   let longitud = palabra.length;
 
-    for(let i = 0; i < longitud /2; i++){
-        if(palabra[i] !== palabra[longitud -1 -i]){
-            return false;
-        }
-    }
+   for(let i = 0; i < longitud /2; i++){
+       if(palabra[i] !== palabra[longitud -1 -i]){
+           return false;
+       }
+   }
 
-    return true;
-  }
+   return true;
+ }
 
-  console.log(esPalindromo("reconocer"));
-    console.log(esPalindromo("alancito"));
- */
+ console.log(esPalindromo("reconocer"));
+   console.log(esPalindromo("alancito"));
+*/
 
 /* function esPalindromo(palabra){
  palabra = palabra.toLowerCase();
@@ -593,7 +593,7 @@ socio → 10%
 
 empleado → 20% */
 
-const descuentos = {
+/* const descuentos = {
     normal: monto => monto * 0.05,
     socio: monto => monto * 0.10,
     empleado: monto => monto * 0.20
@@ -606,3 +606,27 @@ function calcularDescuento(monto, tipoCliente){
 console.log(calcularDescuento(1000, 'normal'));
 console.log(calcularDescuento(1000, 'socio'));
 console.log(calcularDescuento(1000, 'empleado'));
+ */
+
+
+//Ejercicip par e impar JS 
+
+/*👉 Escribí una función que reciba un número y determine si es par o impar.
+
+Retornar "par" o "impar"
+
+No uses librerías */
+
+function parImpar(numero) {
+
+    if (numero % 2 === 0) {
+        return "Es par"
+    } else {
+        return "Es impar"
+    }
+
+}
+
+console.log(parImpar(2));
+console.log(parImpar(3));
+

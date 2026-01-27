@@ -633,7 +633,7 @@ console.log(parImpar(3)); */
 /*
 Escribí una función que reciba un string y devuelva ese string invertido. */
 
-function inverse(str){
+/* function inverse(str){
     let invertida = "";
     for(let i = str.length -1; i >= 0; i--){
         invertida+=str[i]
@@ -649,4 +649,21 @@ function reverseStr(str){
     return str.split('').reduce((acc,char) => char+acc,'')
 }
 
-console.log(inverse("pene"))
+console.log(inverse("pene")) */
+
+/*Escribí una función que reciba un array de números y devuelva un
+ nuevo array con solo los números únicos (sin duplicados). */
+
+ function unicos(array){
+    const resultado = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(!resultado.includes(array[i])){
+            resultado.push(array[i])
+        }
+    }
+
+    return resultado;
+ }
+
+ console.log(unicos([1,2,2,3,4,4,5]));

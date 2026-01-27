@@ -645,3 +645,8 @@ function inverse(str){
 console.log(inverse("Hola"))
 
 
+function reverseStr(str){
+    return str.split('').reduce((acc,char) => char+acc,'')
+}
+
+console.log(inverse("pene"))

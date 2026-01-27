@@ -654,7 +654,7 @@ console.log(inverse("pene")) */
 /*Escribí una función que reciba un array de números y devuelva un
  nuevo array con solo los números únicos (sin duplicados). */
 
- function unicos(array){
+/*  function unicos(array){
     const resultado = [];
 
     for(let i = 0; i < array.length; i++){
@@ -666,4 +666,28 @@ console.log(inverse("pene")) */
     return resultado;
  }
 
- console.log(unicos([1,2,2,3,4,4,5]));
+ console.log(unicos([1,2,2,3,4,4,5])); */
+
+ /**
+  * Escribí una función que reciba un array de números y devuelva un nuevo array 
+   donde cada número aparece tantas veces como su valor.
+   repetir([1, 3, 2])
+// Resultado: [1, 3, 3, 3, 2, 2]
+
+  */
+
+function repetir(arr){
+   const resultado = [];
+
+   for(let i = 0; i < arr.length; i++){
+    const num = arr[i];
+
+    for(let j = 0; j < num; j++){
+        resultado.push(num);
+    }
+   }
+   return resultado
+}
+
+console.log(repetir([1, 3, 2])); 
+  

@@ -617,7 +617,7 @@ Retornar "par" o "impar"
 
 No uses librerías */
 
-function parImpar(numero) {
+/* function parImpar(numero) {
 
     if (numero % 2 === 0) {
         return "Es par"
@@ -628,5 +628,20 @@ function parImpar(numero) {
 }
 
 console.log(parImpar(2));
-console.log(parImpar(3));
+console.log(parImpar(3)); */
+
+/*
+Escribí una función que reciba un string y devuelva ese string invertido. */
+
+function inverse(str){
+    let invertida = "";
+    for(let i = str.length -1; i >= 0; i--){
+        invertida+=str[i]
+
+    }
+    return invertida;
+}
+
+console.log(inverse("Hola"))
+
 

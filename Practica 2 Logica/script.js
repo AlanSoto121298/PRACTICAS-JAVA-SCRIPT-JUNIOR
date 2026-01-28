@@ -758,7 +758,28 @@ console.log(resultado); */
 
 //Con metodo filter
 
-const filtrarPares = arr => arr.filter(n=> n % 2 === 0);
+/* const filtrarPares = arr => arr.filter(n=> n % 2 === 0);
 
 const resultado = filtrarPares([1,2,3,4,5,6]);
-console.log(resultado);
+console.log(resultado); */
+
+
+//Escribe una función que reciba un string y devuelva la cantidad de vocales que contiene.
+
+function vocales(texto) {
+    texto = texto.toLowerCase();
+
+    let letra = "aeiou"
+    let contador = 0;
+
+    for (let i = 0; i < texto.length; i++) {
+        if (letra.includes(texto[i])) {
+           contador++
+
+        }
+    }
+    return contador;
+
+}
+
+console.log(vocales("Hola alancito"))

@@ -697,7 +697,7 @@ Escribí una función que reciba un array de números y devuelva un nuevo array 
 Cada número par se multiplica por 2
 
 Cada número impar se multiplica por 3 */
-
+/* 
 function parImpar(arr) {
     const resultado = [];
     for (let i = 0; i < arr.length; i++) {
@@ -710,5 +710,25 @@ function parImpar(arr) {
     return resultado;
 }
 
-console.log(parImpar([1,2,3,4,5,6,7,8,10]))
+console.log(parImpar([1,2,3,4,5,6,7,8,10])) */
   
+
+//Escribe una función que reciba un array de números y devuelva la suma total.
+
+/*sumarArray([1, 2, 3, 4]) // 10
+sumarArray([5, 10])     // 15
+ */
+
+function sumaArray(numeros){
+
+    let suma = 0;
+
+    for(let i = 0 ; i < numeros.length; i++){
+        suma += numeros[i];
+    }
+
+    return suma;
+
+}
+
+console.log(sumaArray([1,2,3,4,5]));

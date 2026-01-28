@@ -668,13 +668,13 @@ console.log(inverse("pene")) */
 
  console.log(unicos([1,2,2,3,4,4,5])); */
 
- /**
-  * Escribí una función que reciba un array de números y devuelva un nuevo array 
-   donde cada número aparece tantas veces como su valor.
-   repetir([1, 3, 2])
+/**
+ * Escribí una función que reciba un array de números y devuelva un nuevo array 
+  donde cada número aparece tantas veces como su valor.
+  repetir([1, 3, 2])
 // Resultado: [1, 3, 3, 3, 2, 2]
 
-  */
+ */
 
 /* function repetir(arr){
    const resultado = [];
@@ -711,7 +711,7 @@ function parImpar(arr) {
 }
 
 console.log(parImpar([1,2,3,4,5,6,7,8,10])) */
-  
+
 
 //Escribe una función que reciba un array de números y devuelva la suma total.
 
@@ -719,7 +719,7 @@ console.log(parImpar([1,2,3,4,5,6,7,8,10])) */
 sumarArray([5, 10])     // 15
  */
 
-function sumaArray(numeros){
+/* function sumaArray(numeros){
 
     let suma = 0;
 
@@ -731,4 +731,9 @@ function sumaArray(numeros){
 
 }
 
-console.log(sumaArray([1,2,3,4,5]));
+console.log(sumaArray([1,2,3,4,5])); */
+
+//Suma con reduce
+const sumaArray = numeros =>
+    numeros.reduce((acc, n) => acc + n, 0);
+console.log(sumaArray([1, 2, 3, 4, 5]));

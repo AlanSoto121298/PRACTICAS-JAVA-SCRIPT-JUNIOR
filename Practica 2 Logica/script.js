@@ -734,6 +734,24 @@ sumarArray([5, 10])     // 15
 console.log(sumaArray([1,2,3,4,5])); */
 
 //Suma con reduce
-const sumaArray = numeros =>
+/* const sumaArray = numeros =>
     numeros.reduce((acc, n) => acc + n, 0);
-console.log(sumaArray([1, 2, 3, 4, 5]));
+console.log(sumaArray([1, 2, 3, 4, 5])); */
+
+//Escribe una función que reciba un array de números y devuelva un nuevo array solo con los números pares.
+
+function numPares(arr){
+    const pares = [];
+
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] % 2 === 0){
+            pares.push(arr[i])
+        }
+    }
+
+    return pares;
+}
+
+
+const resultado = numPares([1,2,3,4,5,6]);
+console.log(resultado);

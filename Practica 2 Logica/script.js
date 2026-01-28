@@ -740,7 +740,7 @@ console.log(sumaArray([1, 2, 3, 4, 5])); */
 
 //Escribe una función que reciba un array de números y devuelva un nuevo array solo con los números pares.
 
-function numPares(arr){
+/* function numPares(arr){
     const pares = [];
 
     for(let i = 0; i < arr.length; i++){
@@ -754,4 +754,11 @@ function numPares(arr){
 
 
 const resultado = numPares([1,2,3,4,5,6]);
+console.log(resultado); */
+
+//Con metodo filter
+
+const filtrarPares = arr => arr.filter(n=> n % 2 === 0);
+
+const resultado = filtrarPares([1,2,3,4,5,6]);
 console.log(resultado);

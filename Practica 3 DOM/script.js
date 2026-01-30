@@ -103,7 +103,7 @@ boton.addEventListener("click",() =>{
 2️⃣ No necesitas alert ni input, solo actualizar el número. */
 
 
-const titulo = document.querySelector("#contador");
+/* const titulo = document.querySelector("#contador");
 const boton = document.querySelector("#click-btn");
 let contador = 0;
 
@@ -114,5 +114,40 @@ boton.addEventListener("click", () => {
         titulo.style.color = "red"
     }
 })
+ */
+
+
+/*
+Crea una página HTML con:
+
+Un input donde el usuario pueda escribir un número.
+
+Un botón que diga "Verificar par/impar".
+
+Un elemento (puede ser un <p> o <div>) donde se muestre el resultado "Par" o "Impar".
+
+👉 Cuando el usuario haga click en el botón, la página debe 
+mostrar si el número es par o impar usando JavaScript y DOM. */
+
+const input = document.querySelector("#input");
+const boton= document.querySelector("#btn");
+const resultado = document.querySelector("#resultado")
+
+
+boton.addEventListener("click",() => {
+    const numero = Number(input.value);
+
+    if(isNaN(numero)){
+        resultado.textContent = "Por favor , ingresa un número valido"
+    } else{
+        if(numero % 2 === 0){
+            resultado.textContent = "Es par";
+        } else{
+            resultado.textContent = "Es impar";
+        }
+    }
+
+
+});
 
 

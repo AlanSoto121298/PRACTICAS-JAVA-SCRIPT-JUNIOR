@@ -784,9 +784,25 @@ console.log(resultado); */
 
 console.log(vocales("Hola alancito")) */
 
+
+function vocales(texto){
+    texto = texto.toLowerCase();
+    let letra = "aeiou"
+    let contador = 0;
+
+    for(let i = 0; i < texto.length; i++){
+        if(letra.includes(texto[i])){
+            contador++
+        }
+    }
+    return contador;
+}
+
+console.log(vocales("Hola alancito"))
+
 //Crea una función en JavaScript que reciba un array de números y devuelva el número más grande.
 
-function numeroMayor(arr){
+/* function numeroMayor(arr){
     let mayor = arr[0];
 
     for(let i = 1; i < arr.length; i++){
@@ -798,4 +814,4 @@ function numeroMayor(arr){
     return mayor;
 }
 
-console.log(numeroMayor([1,2,3,4,5,6,7,8,9,10]))
+console.log(numeroMayor([1,2,3,4,5,6,7,8,9,10])) */

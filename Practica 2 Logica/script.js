@@ -766,7 +766,7 @@ console.log(resultado); */
 
 //Escribe una función que reciba un string y devuelva la cantidad de vocales que contiene.
 
-function vocales(texto) {
+/* function vocales(texto) {
     texto = texto.toLowerCase();
 
     let letra = "aeiou"
@@ -782,4 +782,20 @@ function vocales(texto) {
 
 }
 
-console.log(vocales("Hola alancito"))
+console.log(vocales("Hola alancito")) */
+
+//Crea una función en JavaScript que reciba un array de números y devuelva el número más grande.
+
+function numeroMayor(arr){
+    let mayor = arr[0];
+
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i] > mayor){
+            mayor = arr[i]
+        }
+    }
+
+    return mayor;
+}
+
+console.log(numeroMayor([1,2,3,4,5,6,7,8,9,10]))

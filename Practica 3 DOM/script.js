@@ -129,7 +129,7 @@ Un elemento (puede ser un <p> o <div>) donde se muestre el resultado "Par" o "Im
 👉 Cuando el usuario haga click en el botón, la página debe 
 mostrar si el número es par o impar usando JavaScript y DOM. */
 
-const input = document.querySelector("#input");
+/* const input = document.querySelector("#input");
 const boton= document.querySelector("#btn");
 const resultado = document.querySelector("#resultado")
 
@@ -151,3 +151,44 @@ boton.addEventListener("click",() => {
 });
 
 
+ */
+
+/*
+Crea una página HTML con:
+
+Un input de texto donde el usuario pueda escribir cualquier frase o palabra.
+
+Un botón que diga "Contar Vocales".
+
+Un elemento <p> donde se mostrará cuántas vocales tiene el texto ingresado.
+
+Cuando el usuario haga click en el botón, la página debe mostrar el resultado usando JavaScript y DOM. */
+
+const input = document.querySelector("#inputTexto");
+const boton = document.querySelector("#btnVocales");
+const parrafo = document.querySelector("#resultadoVocales");
+
+function contarVocales(texto){
+    texto = texto.toLowerCase();
+    let letras = "aeiou"
+    let contador = 0;
+
+    for(let i = 0; i < texto.length; i++){
+        if(letras.includes(texto[i])){
+            contador++
+        }
+    }
+
+    return contador;
+}
+
+boton.addEventListener("click",() =>{
+    const texto = inputTexto.value;
+
+    if(texto.trim() === ""){
+        parrafo.textContent = "Porfavor, escribe algo bro"
+    } else{
+        const totalVocales = contarVocales(texto);
+       parrafo.textContent = `El texto tiene ${totalVocales} vocales`;
+    }
+});

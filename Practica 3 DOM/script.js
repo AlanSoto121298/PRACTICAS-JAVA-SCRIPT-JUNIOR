@@ -186,7 +186,7 @@ boton.addEventListener("click",() =>{
     const texto = inputTexto.value;
 
     if(texto.trim() === ""){
-        parrafo.textContent = "Porfavor, escribe algo bro"
+        parrafo.textContent = "Por favor, escribe algo bro"
     } else{
         const totalVocales = contarVocales(texto);
        parrafo.textContent = `El texto tiene ${totalVocales} vocales`;

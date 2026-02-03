@@ -784,7 +784,7 @@ console.log(resultado); */
 
 console.log(vocales("Hola alancito")) */
 
-
+/* 
 function vocales(texto){
     texto = texto.toLowerCase();
     let letra = "aeiou"
@@ -798,7 +798,7 @@ function vocales(texto){
     return contador;
 }
 
-console.log(vocales("Hola alancito"))
+console.log(vocales("Hola alancito")) */
 
 //Crea una función en JavaScript que reciba un array de números y devuelva el número más grande.
 
@@ -815,3 +815,15 @@ console.log(vocales("Hola alancito"))
 }
 
 console.log(numeroMayor([1,2,3,4,5,6,7,8,9,10])) */
+
+
+
+function parImpar(numero){
+    if(numero % 2 === 0){
+        return "Par"
+    } else{
+        return "Impar"
+    }
+}
+console.log(parImpar(2));
+console.log(parImpar(1));

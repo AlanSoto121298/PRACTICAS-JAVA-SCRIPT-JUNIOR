@@ -651,6 +651,8 @@ function reverseStr(str){
 
 console.log(inverse("pene")) */
 
+
+
 /*Escribí una función que reciba un array de números y devuelva un
  nuevo array con solo los números únicos (sin duplicados). */
 
@@ -817,7 +819,6 @@ console.log(vocales("Hola alancito")) */
 console.log(numeroMayor([1,2,3,4,5,6,7,8,9,10])) */
 
 
-
 /* function parImpar(numero){
     if(numero % 2 === 0){
         return "Par"
@@ -834,7 +835,7 @@ console.log(parImpar(1)); */
 // Resultado: [6, 8]
  */
 
-function filtrarMayores(array){
+/* function filtrarMayores(array){
     const mayores = [];
     for(let i = 0; i < array.length; i++){
         if(array[i] > 5){
@@ -847,3 +848,37 @@ function filtrarMayores(array){
 
 const resultado  = filtrarMayores(([2, 6, 1, 8, 4]))
 console.log(resultado);
+ */
+
+
+//👉 Escribe una función que reciba un array de números y devuelva el número más grande.
+
+/*
+maximo([3, 9, 2, 10, 4]) // 10
+ */
+
+function numMayor(arr){
+    let mayor = arr[0];
+
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i] > mayor){
+            mayor = arr[i]
+        }
+    }
+
+    return mayor;
+}
+
+function maximo(arr){
+    let mayor = arr[0];
+    
+    for(let i = 1 ; i < arr.length; i++){
+        if(arr[i] > mayor){
+            mayor = arr[i]
+        }
+    }
+
+    return mayor;
+}
+
+console.log(maximo([3, 9, 2, 10, 4]))

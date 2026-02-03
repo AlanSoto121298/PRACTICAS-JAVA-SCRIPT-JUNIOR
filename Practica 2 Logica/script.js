@@ -818,7 +818,7 @@ console.log(numeroMayor([1,2,3,4,5,6,7,8,9,10])) */
 
 
 
-function parImpar(numero){
+/* function parImpar(numero){
     if(numero % 2 === 0){
         return "Par"
     } else{
@@ -826,4 +826,24 @@ function parImpar(numero){
     }
 }
 console.log(parImpar(2));
-console.log(parImpar(1));
+console.log(parImpar(1)); */
+
+
+//Dado un array de números, devuelve un nuevo array solo con los números mayores a 5.
+/*filtrarMayores([2, 6, 1, 8, 4])
+// Resultado: [6, 8]
+ */
+
+function filtrarMayores(array){
+    const mayores = [];
+    for(let i = 0; i < array.length; i++){
+        if(array[i] > 5){
+          mayores.push(array[i])
+        }
+    }
+
+    return mayores;
+}
+
+const resultado  = filtrarMayores(([2, 6, 1, 8, 4]))
+console.log(resultado);

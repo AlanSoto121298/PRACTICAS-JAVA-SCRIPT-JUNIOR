@@ -895,7 +895,7 @@ console.log(maximo([3, 9, 2, 10, 4]))
 
 “FizzBuzz” si es múltiplo de ambos */
 
-function fizzBuzz(){
+/* function fizzBuzz(){
  for(let i = 1; i <= 100; i++){
     if(i % 3 === 0 || i % 5 === 0){
         console.log("FizBuzz")
@@ -909,4 +909,22 @@ function fizzBuzz(){
 }}
 
 fizzBuzz()
-   
+    */
+
+//Palindromo con FOR
+function esPalindromo(texto){
+    const limpio = texto.toLowerCase().replace(/\s/g,'') //Con esto pasamos todo a minusculas y luego le quitamos los espacios
+
+    for(let i = 0; i < limpio.length / 2; i++){ //Recorremos con for hasta la mitad del string
+        if(limpio[i] !== limpio[limpio.length -1 - i]){  //Comparamos la letra de la izquierda con la de la derecha
+            return false; //Sino es palindromo salimos
+
+        }
+
+    }
+
+    return true; //Si es palindromo todo coool
+}
+
+const resultado = esPalindromo("Ana");
+console.log(resultado);

@@ -857,7 +857,7 @@ console.log(resultado);
 maximo([3, 9, 2, 10, 4]) // 10
  */
 
-function numMayor(arr){
+/* function numMayor(arr){
     let mayor = arr[0];
 
     for(let i = 1; i < arr.length; i++){
@@ -882,3 +882,31 @@ function maximo(arr){
 }
 
 console.log(maximo([3, 9, 2, 10, 4]))
+ */
+
+
+ //FizBuzz
+ /*
+ Imprimir números del 1 al 100:
+
+“Fizz” si es múltiplo de 3
+
+“Buzz” si es múltiplo de 5
+
+“FizzBuzz” si es múltiplo de ambos */
+
+function fizzBuzz(){
+ for(let i = 1; i <= 100; i++){
+    if(i % 3 === 0 || i % 5 === 0){
+        console.log("FizBuzz")
+    } else if (i % 3 === 0){
+     console.log("Fiz")
+    }else if (i % 5 === 0){
+    console.log("Buzz")
+   } else{
+      console.log(i)
+   }
+}}
+
+fizzBuzz()
+   

@@ -912,7 +912,7 @@ fizzBuzz()
     */
 
 //Palindromo con FOR
-function esPalindromo(texto){
+/* function esPalindromo(texto){
     const limpio = texto.toLowerCase().replace(/\s/g,'') //Con esto pasamos todo a minusculas y luego le quitamos los espacios
 
     for(let i = 0; i < limpio.length / 2; i++){ //Recorremos con for hasta la mitad del string
@@ -928,3 +928,23 @@ function esPalindromo(texto){
 
 const resultado = esPalindromo("Ana");
 console.log(resultado);
+ */
+
+
+//Creá una función llamada sumarPares que reciba un array de números y devuelva la suma de todos los números pares.
+
+function sumarPares(array){
+    let suma = 0;
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % 2 === 0){
+            suma+=array[i]
+        }
+    }
+
+    return suma;
+}
+
+const resultado = sumarPares(([1,2,3,4,5,6,7,8,9,10]))
+
+console.log(resultado)

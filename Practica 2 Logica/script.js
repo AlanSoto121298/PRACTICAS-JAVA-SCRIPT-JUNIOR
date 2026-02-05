@@ -933,7 +933,7 @@ console.log(resultado);
 
 //Creá una función llamada sumarPares que reciba un array de números y devuelva la suma de todos los números pares.
 
-function sumarPares(array){
+/* function sumarPares(array){
     let suma = 0;
 
     for(let i = 0; i < array.length; i++){
@@ -944,6 +944,16 @@ function sumarPares(array){
 
     return suma;
 }
+
+const resultado = sumarPares(([1,2,3,4,5,6,7,8,9,10]))
+
+console.log(resultado) */
+
+//Con filter y reduce{}
+const sumarPares = (array) =>
+    array
+.filter(n=> n % 2 === 0)
+.reduce((acc,n) => acc + n,0);
 
 const resultado = sumarPares(([1,2,3,4,5,6,7,8,9,10]))
 

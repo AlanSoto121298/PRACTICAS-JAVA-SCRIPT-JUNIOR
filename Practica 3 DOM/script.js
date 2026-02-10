@@ -164,7 +164,7 @@ Un elemento <p> donde se mostrará cuántas vocales tiene el texto ingresado.
 
 Cuando el usuario haga click en el botón, la página debe mostrar el resultado usando JavaScript y DOM. */
 
-const input = document.querySelector("#inputTexto");
+/* const input = document.querySelector("#inputTexto");
 const boton = document.querySelector("#btnVocales");
 const parrafo = document.querySelector("#resultadoVocales");
 
@@ -191,4 +191,18 @@ boton.addEventListener("click",() =>{
         const totalVocales = contarVocales(texto);
        parrafo.textContent = `El texto tiene ${totalVocales} vocales`;
     }
-});
+}); */
+
+
+const boton = document.querySelector("#btn");
+const parrafo= document.querySelector("#parrafo");
+
+boton.addEventListener("click",() =>{
+    if( parrafo.textContent === "Cambiame"){
+         parrafo.textContent = "Ya te cambie bro"
+    } else{
+
+          parrafo.textContent = "Cambiame"
+    }
+   
+})

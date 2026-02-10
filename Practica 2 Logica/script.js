@@ -975,7 +975,7 @@ console.log(resultado)
  */
 
 //Function contar letras
-function contarLetras(texto){
+/* function contarLetras(texto){
     const resultado = {};
     for(let i = 0 ; i < texto.length; i++){
         const letra = texto[i];
@@ -990,4 +990,12 @@ function contarLetras(texto){
     return resultado
 }
 
-console.log(contarLetras("Hola buenos dias"))
+console.log(contarLetras("Hola buenos dias")) */
+
+const contarLetras = texto => 
+[...texto].reduce((acc,letra) =>{
+    acc[letra] = (acc[letra] || 0) + 1;
+    return acc;
+},{});
+
+console.log(contarLetras("Hola"))

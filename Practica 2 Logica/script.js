@@ -961,7 +961,7 @@ console.log(resultado) */
 
 // Dado un array de números, devuelve un nuevo array solo con los números pares.
 
-function numPares(numero){
+/* function numPares(numero){
     const pares = []
     for(let i = 0; i < numero.length; i++){
         if(numero[i] % 2 === 0){
@@ -972,3 +972,22 @@ function numPares(numero){
 }
 const resultado = numPares(([1,2,3,4,5,6]));
 console.log(resultado)
+ */
+
+//Function contar letras
+function contarLetras(texto){
+    const resultado = {};
+    for(let i = 0 ; i < texto.length; i++){
+        const letra = texto[i];
+
+        if(resultado[letra]){
+            resultado[letra] = resultado[letra] +1
+        } else{
+            resultado[letra] = 1;
+        }
+    }
+
+    return resultado
+}
+
+console.log(contarLetras("Hola buenos dias"))

@@ -950,11 +950,25 @@ const resultado = sumarPares(([1,2,3,4,5,6,7,8,9,10]))
 console.log(resultado) */
 
 //Con filter y reduce{}
-const sumarPares = (array) =>
+/* const sumarPares = (array) =>
     array
 .filter(n=> n % 2 === 0)
 .reduce((acc,n) => acc + n,0);
 
 const resultado = sumarPares(([1,2,3,4,5,6,7,8,9,10]))
 
+console.log(resultado) */
+
+// Dado un array de números, devuelve un nuevo array solo con los números pares.
+
+function numPares(numero){
+    const pares = []
+    for(let i = 0; i < numero.length; i++){
+        if(numero[i] % 2 === 0){
+            pares.push(numero[i])
+        } 
+    }
+    return pares;
+}
+const resultado = numPares(([1,2,3,4,5,6]));
 console.log(resultado)

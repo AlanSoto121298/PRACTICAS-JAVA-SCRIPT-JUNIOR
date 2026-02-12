@@ -22,7 +22,7 @@ console.log(reverseString("Hola"));  */
 
 //3- Escribe una funcion que recibe un array de numeros y devuelve un nuevo array con solo numeros unicos(No duplicados)
 
-function unicos(array){
+/* function unicos(array){
     const resultado = [];
 
     for(let i = 0; i < array.length; i++){
@@ -34,4 +34,23 @@ function unicos(array){
     return resultado
 }
 
-console.log(unicos([1,2,2,3,3,4,5,6,7,9,9,9]))
+console.log(unicos([1,2,2,3,3,4,5,6,7,9,9,9])) */
+
+/*4-Escribe una funcion que reciba un array de numeros y devuelve un nuevo array donde cada numero
+aparece tantas veces como su valor  */
+
+function repetir(arr){
+    const resultado = [];
+
+    for(let i = 0; i < arr.length; i++){
+        const num = arr[i];
+
+        for(let j = 0; j < num; j++){
+            resultado.push(num)
+        }
+    }
+
+    return resultado;
+}
+
+console.log(repetir([1,3,2,5]))

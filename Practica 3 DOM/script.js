@@ -194,7 +194,7 @@ boton.addEventListener("click",() =>{
 }); */
 
 
-const boton = document.querySelector("#btn");
+/* const boton = document.querySelector("#btn");
 const parrafo= document.querySelector("#parrafo");
 
 boton.addEventListener("click",() =>{
@@ -205,4 +205,4 @@ boton.addEventListener("click",() =>{
           parrafo.textContent = "Cambiame"
     }
    
-})
+}) */

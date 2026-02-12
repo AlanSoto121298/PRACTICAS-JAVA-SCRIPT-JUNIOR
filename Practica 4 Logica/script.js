@@ -1,6 +1,6 @@
 //Funcion que reciba un string y lo devuelve al reves
 
-function reverseString(str){
+/* function reverseString(str){
     let reversed = " ";
     
     for(let i = str.length -1; i >= 0; i--){
@@ -10,4 +10,12 @@ function reverseString(str){
     return reversed
 }
 
-console.log(reverseString("Hola"));
+console.log(reverseString("Hola")); */
+
+// Usando reversed con Split reverse y join
+
+function reverseString(str){
+    return str.split("").reverse().join("");
+}
+
+console.log(reverseString("Hola")); 

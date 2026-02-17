@@ -75,15 +75,18 @@ console.log(vocales("Hola buenos dias")) */
 
 
 
-function unicos(array){
-    const resultado = [];
-    for(let i = 0; i < array.length; i++){
-        if(!resultado.includes(array[i])){
-            resultado.push(array[i]);
+function vocales(texto){
+    texto = texto.toLowerCase();
+    let letra = "aeiou"
+    let contador = 0;
+
+    for(let i = 0; i < texto.length; i++){
+        if(letra.includes(texto[i])){
+            contador++
         }
     }
 
-    return resultado
+    return contador;
 }
 
-console.log(unicos(([1,2,3,4,5,5,5,6,7,7,8,8,10])))
+console.log(vocales("Hola nena"))

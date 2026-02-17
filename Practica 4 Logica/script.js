@@ -75,18 +75,7 @@ console.log(vocales("Hola buenos dias")) */
 
 
 
-function vocales(texto){
-    texto = texto.toLowerCase();
-    let letra = "aeiou"
-    let contador = 0;
-
-    for(let i = 0; i < texto.length; i++){
-        if(letra.includes(texto[i])){
-            contador++
-        }
-    }
-
-    return contador;
-}
-
-console.log(vocales("Hola nena"))
+//Pares con FILTER
+const filtrarPares= arr => arr.filter(n=> n % 2 === 0)
+const resultado = filtrarPares([1,2,3,4,5,6,7,8,9,10])
+console.log(resultado)

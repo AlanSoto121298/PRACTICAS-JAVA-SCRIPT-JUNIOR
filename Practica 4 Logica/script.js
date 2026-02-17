@@ -58,7 +58,7 @@ console.log(repetir([1,3,2,5])) */
 
 //Funcion que regresa la cantidad de Vocales
 
-function vocales(texto){
+/* function vocales(texto){
     texto=texto.toLowerCase();
     let letra = "aeiou";
     let contador = 0;
@@ -71,4 +71,16 @@ function vocales(texto){
     return contador;
 }
 
-console.log(vocales("Hola buenos dias"))
+console.log(vocales("Hola buenos dias")) */
+
+
+
+function reverseString(str){
+    let reversed = "";
+    for(let i = str.length -1 ;i >= 0; i--){
+        reversed+=str[i]
+    }
+    return reversed;
+}
+
+console.log(reverseString("Mildred"))

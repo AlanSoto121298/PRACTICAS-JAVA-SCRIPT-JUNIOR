@@ -94,13 +94,20 @@ console.log(resultado) */
     }
 } */
 
-function reversed(str){
-    let reversed  = "";
-    for(let i = str.length -1; i >= 0; i--){
-        reversed+=str[i]
-    }
 
-    return reversed
+
+function usersActive(users) {
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].age > 18) {
+            console.log(users[i]);
+        }
+    }
 }
 
-console.log(reversed("Hello"))
+usersActive([
+  { id: 1, name: "Ana", age: 22, active: true },
+  { id: 2, name: "Luis", age: 17, active: false },
+  { id: 3, name: "Carlos", age: 28, active: true },
+  { id: 4, name: "Marta", age: 15, active: true },
+  { id: 5, name: "Sofía", age: 34, active: false }
+]);

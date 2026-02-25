@@ -20,6 +20,8 @@ console.log(reverseString("Hola")); */
 
 console.log(reverseString("Hola"));  */
 
+
+
 //3- Escribe una funcion que recibe un array de numeros y devuelve un nuevo array con solo numeros unicos(No duplicados)
 
 /* function unicos(array){
@@ -159,7 +161,7 @@ const resultado = numPar ([1,2,3,4,5,6,7,8,9,10])
 console.log(resultado) */
 
 
-function reversed(str){
+/* function reversed(str){
     let reversed = "";
 
     for(let i = str.length -1; i >= 0; i--){
@@ -169,4 +171,10 @@ function reversed(str){
     return reversed;
 }
 
-console.log(reversed("Hola"))
+console.log(reversed("Hola")) */
+
+function reverseString(str){
+    return str.split("").reverse().join("")
+}
+
+console.log(reverseString("mildred"));

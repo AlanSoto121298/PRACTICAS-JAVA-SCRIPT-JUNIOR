@@ -173,8 +173,23 @@ console.log(resultado) */
 
 console.log(reversed("Hola")) */
 
-function reverseString(str){
+/* function reverseString(str){
     return str.split("").reverse().join("")
 }
 
-console.log(reverseString("mildred"));
+console.log(reverseString("mildred")); */
+
+
+function unicos(array){
+    const resultado = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(!resultado.includes(array[i])){
+            resultado.push(array[i])
+        }
+    }
+
+    return resultado
+}
+
+console.log(unicos([1,2,2,2,3,3,4,7,7,8,8,9,10]))

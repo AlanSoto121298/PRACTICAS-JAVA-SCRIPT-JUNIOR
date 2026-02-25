@@ -111,13 +111,28 @@ function usersActive(users){
     }
 }
 
-/* usersAge([
+function usersAge2(users){
+    for(let i = 0 ; i < users.length; i++){
+        if(users[i].age < 18){
+            console.log(users[i])
+        }
+    }
+}
+
+usersAge([
   { id: 1, name: "Ana", age: 22, active: true },
   { id: 2, name: "Luis", age: 17, active: false },
   { id: 3, name: "Carlos", age: 28, active: true },
   { id: 4, name: "Marta", age: 15, active: true },
   { id: 5, name: "Sofía", age: 34, active: false }
-]); */
+]);
+usersAge2([
+  { id: 1, name: "Ana", age: 22, active: true },
+  { id: 2, name: "Luis", age: 17, active: false },
+  { id: 3, name: "Carlos", age: 28, active: true },
+  { id: 4, name: "Marta", age: 15, active: true },
+  { id: 5, name: "Sofía", age: 34, active: false }
+]);
 
 usersActive([
   { id: 1, name: "Ana", age: 22, active: true },

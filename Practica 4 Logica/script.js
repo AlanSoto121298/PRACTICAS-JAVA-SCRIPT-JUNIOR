@@ -144,7 +144,7 @@ usersActive([
  */
 
 
-function numPar(array){
+/* function numPar(array){
     const pares = [];
 
     for(let i = 0; i < array.length; i++){
@@ -156,4 +156,17 @@ function numPar(array){
 }
 
 const resultado = numPar ([1,2,3,4,5,6,7,8,9,10])
-console.log(resultado)
+console.log(resultado) */
+
+
+function reversed(str){
+    let reversed = "";
+
+    for(let i = str.length -1; i >= 0; i--){
+        reversed+=str[i]
+    }
+
+    return reversed;
+}
+
+console.log(reversed("Hola"))

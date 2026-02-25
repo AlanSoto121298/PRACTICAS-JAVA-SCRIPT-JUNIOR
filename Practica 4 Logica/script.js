@@ -95,7 +95,7 @@ console.log(resultado) */
 } */
 
 
-function usersAge(users) {
+/* function usersAge(users) {
     for (let i = 0; i < users.length; i++) {
         if (users[i].age > 18) {
             console.log(users[i]);
@@ -141,3 +141,19 @@ usersActive([
   { id: 4, name: "Marta", age: 15, active: true },
   { id: 5, name: "Sofía", age: 34, active: false }
 ]);
+ */
+
+
+function numPar(array){
+    const pares = [];
+
+    for(let i = 0; i < array.length; i++){
+      if(array[i] % 2 === 0){
+        pares.push(array[i])
+      }
+    }
+    return pares;
+}
+
+const resultado = numPar ([1,2,3,4,5,6,7,8,9,10])
+console.log(resultado)

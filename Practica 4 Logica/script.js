@@ -9,3 +9,12 @@ function reversedString(str){
 }
 
 console.log(reversedString("Hola"))
+
+//Reversed with join ,split and reverse
+
+function reversedString2(str){
+    return str.split("").reverse().join("");
+
+}
+
+   console.log(reversedString2("Alancito"))

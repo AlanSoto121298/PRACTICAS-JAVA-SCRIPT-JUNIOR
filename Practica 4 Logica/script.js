@@ -52,3 +52,16 @@ function repetir(arr){
 }
 
 console.log(repetir([1,3,2]))
+
+//Array que reciba numeros y devuelva suma total
+
+function sumArray(numeros){
+    let suma = 0;
+    for(let i = 0; i< numeros.length; i++){
+        suma+=numeros[i]
+    }
+
+    return suma;
+}
+
+console.log(sumArray([1,2,3,4,5,6]))

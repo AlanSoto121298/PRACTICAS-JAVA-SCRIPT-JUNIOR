@@ -10,3 +10,12 @@ function reverseString(str){
 }
 
 console.log(reverseString("Alancio"))
+
+//Reversed con split
+
+function reverseStringTwo(str){
+    return str.split("").reverse().join("");
+    
+}
+
+console.log(reverseStringTwo("Help"))

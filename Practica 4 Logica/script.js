@@ -39,7 +39,7 @@ console.log(unicos([1,1,2,3,3,3,4,5,8,9,10,10,11])) */
 
 //Num par
 
-function parImpar(array){
+/* function parImpar(array){
     const pares = [];
 
     for(let i = 0; i < array.length; i++){
@@ -53,4 +53,23 @@ function parImpar(array){
 
 const resultado = parImpar([1,2,3,4,5,6,7,8,9,10])
 
-console.log(resultado)
+console.log(resultado) */
+
+//Reciba un array de numeros y devuelva un nuevo array donde cada num aparece tantas v eces como su valor
+
+function repetir(arr){
+    const resultado = [];
+    for(let i = 0; i <arr.length; i++){
+        const num = arr[i];
+
+        for(let j = 0; j < num; j++){
+            resultado.push(num);
+        }
+
+        
+    }
+
+    return resultado;
+}
+
+console.log(repetir([1,3,2]))

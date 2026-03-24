@@ -12,9 +12,25 @@
 console.log(reverseString("Hola")) */
 
 //Version con split reverse y JOIN
-
+/* 
 function reverseString(str){
     return str.split("").reverse().join("");
 }
 
-console.log(reverseString("Hola"))
+console.log(reverseString("Hola")) */
+
+//Numeros unicos sin duplicados
+
+function unicos(array){
+
+    const resultado = [];
+    for(let i = 0; i < array.length; i++){
+        if(!resultado.includes(array[i])){
+            resultado.push(array[i])
+        }
+    }
+
+    return resultado;
+}
+
+console.log(unicos([1,2,3,3,3,3,5,6,6,6,30,30,245]))

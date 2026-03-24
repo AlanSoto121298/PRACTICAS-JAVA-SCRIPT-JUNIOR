@@ -21,7 +21,7 @@ console.log(reverseString("Hola")) */
 
 //Numeros unicos sin duplicados
 
-function unicos(array){
+/* function unicos(array){
 
     const resultado = [];
     for(let i = 0; i < array.length; i++){
@@ -33,4 +33,18 @@ function unicos(array){
     return resultado;
 }
 
-console.log(unicos([1,2,3,3,3,3,5,6,6,6,30,30,245]))
+console.log(unicos([1,2,3,3,3,3,5,6,6,6,30,30,245])) */
+
+
+//Funcion que reciba un array de numeros y devuelva la suma total
+
+function sumaArray(numeros){
+    let suma = 0;
+    for(let i = 0; i< numeros.length; i++){
+        suma+=numeros[i]
+    }
+
+    return suma
+}
+
+console.log(sumaArray([1,2,3,4,5,6,7,8]))

@@ -22,7 +22,7 @@ console.log(reverseString("Help")) */
 
 //Numeros duplicados
 
-function unicos(array){
+/* function unicos(array){
     const resultado = [];
 
     for(let i = 0; i < array.length; i++){
@@ -34,4 +34,20 @@ function unicos(array){
     return resultado;
 }
 
-console.log(unicos([1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,8,8,9,10]))
+console.log(unicos([1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,8,8,9,10])) */
+
+//Numero aparece como su valor
+
+function repetir(arr){
+    const resultado = [];
+    for(let i = 0; i < arr.length; i++){
+        const num = arr[i];
+
+        for(let j = 0; j < num; j++){
+            resultado.push(num)
+        }
+    }
+     return resultado;
+}
+
+console.log(repetir([1,2,3,5,6,7,10]))

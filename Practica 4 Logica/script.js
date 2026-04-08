@@ -38,7 +38,7 @@ console.log(unicos([1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,8,8,9,10])) */
 
 //Numero aparece como su valor
 
-function repetir(arr){
+/* function repetir(arr){
     const resultado = [];
     for(let i = 0; i < arr.length; i++){
         const num = arr[i];
@@ -50,4 +50,17 @@ function repetir(arr){
      return resultado;
 }
 
-console.log(repetir([1,2,3,5,6,7,10]))
+console.log(repetir([1,2,3,5,6,7,10])) */
+
+//Array de numeros y suma total
+
+function sumArray(numeros){
+    let suma = 0;
+    for(let i = 0; i < numeros.length; i++){
+        suma +=numeros[i]
+    }
+
+    return suma;
+}
+
+console.log(sumArray([1,2,4,5,6,100]))

@@ -67,7 +67,7 @@ console.log(sumArray([1,2,4,5,6,100])) */
 
 //Array con pares
 
-function filtrarPares(array){
+/* function filtrarPares(array){
     const pares = [];
 
     for(let i = 0; i < array.length; i++){
@@ -77,7 +77,11 @@ function filtrarPares(array){
     }
 
     return pares;
-}
+} */
 
+/* const resultado = filtrarPares([1,2,3,4,5,6,7,8,9,10])
+console.log(resultado) */
+
+const filtrarPares = arr => arr.filter(n => n % 2 == 0)
 const resultado = filtrarPares([1,2,3,4,5,6,7,8,9,10])
 console.log(resultado)

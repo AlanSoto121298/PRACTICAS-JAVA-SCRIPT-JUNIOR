@@ -53,7 +53,7 @@ console.log(unicos([1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,8,8,9,10])) */
 console.log(repetir([1,2,3,5,6,7,10])) */
 
 //Array de numeros y suma total
-
+/* 
 function sumArray(numeros){
     let suma = 0;
     for(let i = 0; i < numeros.length; i++){
@@ -63,4 +63,21 @@ function sumArray(numeros){
     return suma;
 }
 
-console.log(sumArray([1,2,4,5,6,100]))
+console.log(sumArray([1,2,4,5,6,100])) */
+
+//Array con pares
+
+function filtrarPares(array){
+    const pares = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % 2 == 0){
+            pares.push(array[i])
+        }
+    }
+
+    return pares;
+}
+
+const resultado = filtrarPares([1,2,3,4,5,6,7,8,9,10])
+console.log(resultado)

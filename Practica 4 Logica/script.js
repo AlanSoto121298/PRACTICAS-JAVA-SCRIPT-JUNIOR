@@ -1,7 +1,7 @@
 //Funcion que reciba string al reves
 
 
-function reverseString(str){
+/* function reverseString(str){
     let reversed = "";
     for(let i = str.length -1; i >= 0; i--){
         reversed+=str[i]
@@ -10,5 +10,22 @@ function reverseString(str){
     return reversed;
 }
 
-console.log(reverseString("Hola alan"))
+console.log(reverseString("Hola alan")) */
+
+
+
+//ARRAY DE NUMEROS Y RECIBA UNO NORMAL
+
+function unicos(array){
+    const resultado = [];
+    for ( let i = 0; i < array.length; i++){
+        if(!resultado.includes(array[i])){
+            resultado.push(array[i])
+        }
+    }
+
+    return resultado
+}
+
+console.log(unicos([1,2,2,3,3,4,5,5,5,5,7]))
 

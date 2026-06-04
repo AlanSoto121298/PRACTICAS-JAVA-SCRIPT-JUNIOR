@@ -42,7 +42,7 @@ console.log(unicos([1,2,2,3,3,4,5,5,5,5,7]))
 
 //Numeros pa repetir
 
-function repetir(arr){
+/* function repetir(arr){
     const resultado = [];
 
     for(let i = 0; i < arr.length; i++){
@@ -57,4 +57,22 @@ function repetir(arr){
 }
 
 
-console.log(repetir([1,2,2,3,4,5,5,5,5,5,]))
+console.log(repetir([1,2,2,3,4,5,5,5,5,5,])) */
+
+
+//Numeros PARES
+
+function filtrarPares(arr){
+    const pares = [];
+
+    for(let i = 0 ; i < arr.length; i++){
+        if(arr[i] % 2 === 0){
+            pares.push(arr[i])
+        }
+    }
+
+    return pares;
+}
+
+const resultado = filtrarPares ([1,2,3,4,5,6,7,8,9,10]);
+console.log(resultado)

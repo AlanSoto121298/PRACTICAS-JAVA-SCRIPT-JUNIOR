@@ -32,14 +32,6 @@ console.log(unicos([1,2,2,3,3,4,5,5,5,5,7]))
 
 //Suma numeros
 
-function sumArray(numeros){
-    let suma = 0;
-
-    for(let i = 0; i< numeros.length; i++){
-        suma += numeros[i]
-    }
-
-    return suma
-}
-
-console.log(sumArray([1,2,3,4,6,7,8,10]))
+const sumaArray = numeros =>
+    numeros.reduce((acc,n) => acc + n ,0);
+     console.log(sumaArray([1,2,3,4,5]))

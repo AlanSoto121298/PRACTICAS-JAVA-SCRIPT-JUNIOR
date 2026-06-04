@@ -85,7 +85,7 @@ console.log(resultado) */
 
 //Mandar String y devuelva las vocales que tiene
 
-function vocales(texto){
+/* function vocales(texto){
     texto = texto.toLowerCase();
     let letra = "aeiou"
     let contador = 0;
@@ -99,4 +99,19 @@ function vocales(texto){
     return contador;
 }
 
-console.log(vocales("Hola"));
+console.log(vocales("Hola")); */
+
+//Invertir Cadena
+
+function invertirCadena(cadena){
+   let resultado = "";
+   
+   for(let i = cadena.length -1; i >= 0 ; i--){
+    resultado+=cadena[i]
+   }
+
+   return resultado
+}
+
+let palabra= "Hola";
+console.log(invertirCadena(palabra));

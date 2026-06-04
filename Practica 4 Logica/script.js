@@ -61,7 +61,7 @@ console.log(repetir([1,2,2,3,4,5,5,5,5,5,])) */
 
 
 //Numeros PARES
-
+/* 
 function filtrarPares(arr){
     const pares = [];
 
@@ -74,5 +74,11 @@ function filtrarPares(arr){
     return pares;
 }
 
+const resultado = filtrarPares ([1,2,3,4,5,6,7,8,9,10]);
+console.log(resultado) */
+
+//Pares con Filter
+
+const filtrarPares = arr => arr.filter(n=> n % 2 === 0);
 const resultado = filtrarPares ([1,2,3,4,5,6,7,8,9,10]);
 console.log(resultado)

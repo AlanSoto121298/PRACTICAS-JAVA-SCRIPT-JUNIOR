@@ -32,6 +32,29 @@ console.log(unicos([1,2,2,3,3,4,5,5,5,5,7]))
 
 //Suma numeros
 
-const sumaArray = numeros =>
+/* const sumaArray = numeros =>
     numeros.reduce((acc,n) => acc + n ,0);
-     console.log(sumaArray([1,2,3,4,5]))
+     console.log(sumaArray([1,2,3,4,5])) */
+
+
+
+
+
+//Numeros pa repetir
+
+function repetir(arr){
+    const resultado = [];
+
+    for(let i = 0; i < arr.length; i++){
+        const num = arr[i];
+
+        for(let j = 0; j < num; j++){
+            resultado.push(num)
+        }
+    }
+
+    return resultado;
+}
+
+
+console.log(repetir([1,2,2,3,4,5,5,5,5,5,]))

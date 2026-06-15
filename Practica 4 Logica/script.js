@@ -1,117 +1,16 @@
 //Funcion que reciba string al reves
 
 
-/* function reverseString(str){
-    let reversed = "";
-    for(let i = str.length -1; i >= 0; i--){
-        reversed+=str[i]
-    }
-
-    return reversed;
-}
-
-console.log(reverseString("Hola alan")) */
 
 
+//Reciba un string al reves
 
-//ARRAY DE NUMEROS Y RECIBA UNO NORMAL
+function reverseString(str){
+   let reversed = "";
 
-/* function unicos(array){
-    const resultado = [];
-    for ( let i = 0; i < array.length; i++){
-        if(!resultado.includes(array[i])){
-            resultado.push(array[i])
-        }
-    }
-
-    return resultado
-}
-
-console.log(unicos([1,2,2,3,3,4,5,5,5,5,7]))
- */
-
-//Suma numeros
-
-/* const sumaArray = numeros =>
-    numeros.reduce((acc,n) => acc + n ,0);
-     console.log(sumaArray([1,2,3,4,5])) */
-
-
-
-
-
-//Numeros pa repetir
-
-/* function repetir(arr){
-    const resultado = [];
-
-    for(let i = 0; i < arr.length; i++){
-        const num = arr[i];
-
-        for(let j = 0; j < num; j++){
-            resultado.push(num)
-        }
-    }
-
-    return resultado;
-}
-
-
-console.log(repetir([1,2,2,3,4,5,5,5,5,5,])) */
-
-
-//Numeros PARES
-/* 
-function filtrarPares(arr){
-    const pares = [];
-
-    for(let i = 0 ; i < arr.length; i++){
-        if(arr[i] % 2 === 0){
-            pares.push(arr[i])
-        }
-    }
-
-    return pares;
-}
-
-const resultado = filtrarPares ([1,2,3,4,5,6,7,8,9,10]);
-console.log(resultado) */
-
-//Pares con Filter
-
-/* const filtrarPares = arr => arr.filter(n=> n % 2 === 0);
-const resultado = filtrarPares ([1,2,3,4,5,6,7,8,9,10]);
-console.log(resultado) */
-
-//Mandar String y devuelva las vocales que tiene
-
-/* function vocales(texto){
-    texto = texto.toLowerCase();
-    let letra = "aeiou"
-    let contador = 0;
-
-    for(let i = 0; i< texto.length; i++){
-        if(letra.includes(texto[i])){
-            contador++
-        }
-    }
-
-    return contador;
-}
-
-console.log(vocales("Hola")); */
-
-//Invertir Cadena
-
-function invertirCadena(cadena){
-   let resultado = "";
-   
-   for(let i = cadena.length -1; i >= 0 ; i--){
-    resultado+=cadena[i]
+   for(let i = str.length -1; i >= 0; i--){
+    reversed+=str[i]
    }
-
-   return resultado
 }
 
-let palabra= "Hola";
-console.log(invertirCadena(palabra));
+console.log(reverseString("Hola alan")) 
